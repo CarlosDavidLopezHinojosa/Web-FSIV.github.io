@@ -1,4 +1,188 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Apuntes de FSIV]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>Apuntes de FSIV</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Tue, 29 Oct 2024 15:47:53 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 29 Oct 2024 15:47:49 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[1. Módulo de Adquisición]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Apuntes de FSIV]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>Apuntes de FSIV</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 08 Nov 2024 17:38:37 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 08 Nov 2024 17:38:36 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[2. La Imagen Digital]]></title><description><![CDATA[ 
+ <br>En esta sección introduciremos la formación de la imagen y algunos procesos que se aplican a esta.<br><br>Ocurre un problema a la hora de hacer una fotografía y es la siguiente;<br>Lógicamente cuando hacemos una fotografía la hacemos de un objeto de 3 dimensiones con coordenadas , pero una imagen al fin y al cabo es una matriz de filas y columnas es decir se expresan en coordenadas , perder la componente  no es beneficioso.<br>¿Como podría obtener una posición concreta del objeto de la vida real, pero en la imagen?<br>Vamos a representar ambas posiciones en este sistema:<br><br><img alt="Pasted image 20241029175542.png" src="añadidos/pasted-image-20241029175542.png"><br>Supongamos que tenemos lo siguiente:<br>Estamos apuntando con nuestra cámara a un objeto del mundo real, la proyección de este pasa a través de la cámara.<br>Esta sería la distribución de los haces de luz:<br><img alt="Captura desde 2024-10-26 18-31-23.png" src="añadidos/captura-desde-2024-10-26-18-31-23.png"><br>Solo que en este caso  es ,  se considera despreciable por lo tanto,  es ,  es ,  es .<br>Por semejanza de triángulos se obtiene que  <br>Por antonomasia se obtiene que:<br><br><br>Muestreo:<br>
+El muestreo es el proceso de convertir una imagen continua en una representación digital. En una imagen continua (como una fotografía), cada punto puede tomar valores precisos de intensidad o color en el espacio continuo. <br>Al digitalizar esta imagen para almacenamiento o procesamiento, se deben tomar muestras en intervalos regulares para obtener una cuadrícula de puntos o píxeles que representan la imagen.<br>
+<br>Frecuencia de Muestreo: La frecuencia con la que se toman muestras afecta directamente la calidad de la imagen digital. De acuerdo con el Teorema de Nyquist, la frecuencia de muestreo debe ser al menos el doble de la frecuencia máxima de la imagen (detalle más pequeño) para evitar la pérdida de información.
+<br>Resolución de la Imagen: La cantidad de muestras tomadas por unidad de área determina la resolución. Cuanto mayor sea la resolución, más fiel será la representación digital de la imagen continua original.
+<br><img alt="Captura desde 2024-10-27 10-05-52.png" src="añadidos/captura-desde-2024-10-27-10-05-52.png"><br> Aliasing en Imágenes:<br>El aliasing ocurre cuando la frecuencia de muestreo es insuficiente para capturar todos los detalles de la imagen continua. Cuando esto sucede, los detalles de alta frecuencia (como líneas finas o texturas detalladas) aparecen distorsionados o producen patrones irreales y no deseados en la imagen digital. Algunos efectos comunes del aliasing incluyen:<br>
+<br>Efecto Moiré: Un patrón de interferencia que aparece cuando se superponen patrones repetitivos, como líneas finas, y no se muestrean adecuadamente.
+<br>Escalones y Bordes Dentados: Las líneas y curvas aparecen dentadas o en bloques debido a la baja resolución o al muestreo insuficiente, un fenómeno conocido como "aliasing espacial."
+<br><img alt="Captura desde 2024-10-27 10-06-17.png" src="añadidos/captura-desde-2024-10-27-10-06-17.png"><br>Ejemplo de Aliasing<br>En una foto de una reja con líneas muy finas, si no se usa la frecuencia de muestreo adecuada, puede aparecer un patrón de interferencia o efecto Moiré en la imagen digital, donde algunas líneas parecen moverse o aparecer duplicadas.<br><img alt="Captura desde 2024-10-27 10-06-35.png" src="añadidos/captura-desde-2024-10-27-10-06-35.png"><br><br>Conversión de energía luminosa a voltaje:<br>
+, es un modelo que describe la relación entre la señal de salida de un sensor de imagen (voltaje  ) y la intensidad de luz  que incide sobre el sensor. Cada componente de la ecuación tiene un papel específico:<br>
+<br>
+: Es el voltaje de salida o la señal generada por el sensor de imagen. Este valor está relacionado con la intensidad luminosa capturada en cada píxel y se convierte finalmente en el valor digital que se representa en la imagen.
+
+<br>
+: Es una constante de ganancia que ajusta el nivel de respuesta del sensor a la luz. Aumentar  implica que el sensor responderá más intensamente ante la misma cantidad de luz, amplificando la señal de salida.
+
+<br>
+: Es la intensidad de luz que incide sobre el píxel del sensor. Es la variable principal de entrada y representa la cantidad de energía luminosa que el sensor recibe.
+
+<br>
+: Es el parámetro de gamma o exponente no lineal que define cómo el sensor responde a diferentes niveles de luz. La gamma modifica la relación entre la luz que incide en el sensor y la señal de salida.
+
+<br>Si , la relación es lineal: la salida del sensor es proporcional a la intensidad de luz .
+<br>Si , la respuesta es sub-lineal, lo cual da más importancia a los tonos oscuros y aumenta el detalle en sombras.
+<br>Si , la respuesta es sobre-lineal, lo cual aumenta el contraste en las áreas claras.
+
+Este parámetro es importante para ajustar la respuesta del sensor y es común en el procesamiento de imágenes y la corrección gamma en pantallas.
+
+<br>
+ : Es un desplazamiento u offset que ajusta el nivel base de la señal, permitiendo que el sensor maneje niveles de luz de fondo o configuraciones de exposición específicas. Este término asegura que el voltaje de salida tenga una referencia o punto de partida adecuado en ausencia de luz (o en condiciones específicas de exposición).
+
+<br><img alt="Captura desde 2024-10-27 10-49-30.png" src="añadidos/captura-desde-2024-10-27-10-49-30.png"><br>Cuantificación:<br>
+Una vez que la luz ha sido convertida en voltaje, este valor analógico debe convertirse en un valor digital para que pueda procesarse y almacenarse en dispositivos electrónicos. Aquí es donde entra en juego la cuantificación mediante un convertidor analógico a digital (ADC):<br>
+<br>Discretización del Voltaje: El rango de voltajes posibles en el sensor se divide en niveles discretos. Por ejemplo, en una imagen de 8 bits, hay 256 niveles posibles (0 a 255), donde cada nivel representa un rango específico de voltajes.<br>
+
+<br>Asignación de Niveles de Intensidad: El ADC asigna a cada píxel un valor numérico correspondiente al nivel de voltaje que ha medido, generando así una representación digital de la imagen. En una imagen en escala de grises de 8 bits, un valor de 0 representaría negro absoluto (sin luz), y 255 representaría blanco absoluto (máxima intensidad de luz).<br>
+
+<br>Profundidad de Bits: La cantidad de niveles de cuantificación está determinada por la profundidad de bits. A mayor profundidad de bits (por ejemplo, 10 bits o 12 bits), más niveles de intensidad se pueden representar, lo que permite una gama de tonos más amplia y una calidad de imagen más detallada. Sin embargo, esto también implica un mayor uso de almacenamiento y potencia de procesamiento.
+<br><br>RGB:<br>
+Se basa en representar cualquier color con los 3 colores primarios, en su gama de intensidades. Mejor la que el ordenador lo represente.<br><img alt="Pasted image 20241027105317.png" src="añadidos/pasted-image-20241027105317.png"><br>HSV:<br>
+Se basa en función de 3 caracteristicas del color, Hue, Saturation y Value.<br>
+Mejor interpretado por el ojo humano.<br><img alt="Pasted image 20241027105331.png" src="añadidos/pasted-image-20241027105331.png"><br><br>Un histograma de una imagen es un gráfico de frecuencias de cada uno de los píxeles de la imagen. <br><img alt="Pasted image 20241027105930.png" src="añadidos/pasted-image-20241027105930.png"><br>
+<br>Análisis de Contraste:
+<br>
+<br>
+Un histograma que abarca todo el rango de intensidades (desde el negro hasta el blanco) indica una buena distribución del contraste.
+
+<br>
+Un histograma concentrado en un extremo sugiere que la imagen podría estar subexpuesta (concentrado a la izquierda) o sobreexpuesta (concentrado a la derecha).
+
+<br>
+<br>Ecualización de Histogramas:
+<br>
+<br>
+Este es un método para mejorar el contraste de una imagen al redistribuir los niveles de intensidad.
+
+<br>
+Al ecualizar un histograma, se busca que la distribución de los píxeles se extienda a través de todo el rango disponible, lo que resulta en una imagen con mayor contraste y más detalles.
+
+<br>Clasificación de imágenes según su histograma<br>
+<br>
+Imagen Subexpuesta:<br>
+Histograma concentrado a la izquierda, indicando que la mayoría de los píxeles son oscuros.
+
+<br>
+Imagen Sobreexpuesta:<br>
+Histograma concentrado a la derecha, mostrando que la mayoría de los píxeles son claros.
+
+<br>
+Imagen Bien Expuesta:<br>
+Histograma que abarca un rango amplio desde la izquierda hasta la derecha, indicando una buena distribución de tonos.
+
+<br><img alt="Captura desde 2024-10-27 11-00-48.png" src="añadidos/captura-desde-2024-10-27-11-00-48.png">]]></description><link>2.-la-imagen-digital.html</link><guid isPermaLink="false">2. La Imagen Digital.md</guid><pubDate>Tue, 29 Oct 2024 18:02:37 GMT</pubDate><enclosure url="añadidos/pasted-image-20241029175542.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="añadidos/pasted-image-20241029175542.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[5. Modelo Proyectivo]]></title><description><![CDATA[ 
+ <br>En está sección se nos plantea el siguiente problema que también vimos en el bloque anterior y nos da los fundamentos para después entender como se reconstruye la escena 3D.<br><br>¿Como recupero un punto 3D de una imagen?<br>Como bien ya sabes al hacer una fotografía la componente de la profundidad se pierde, sin embargo, esta es muy importante.<br><img alt="Pasted image 20241029174230.png" src="añadidos/pasted-image-20241029174230.png"><br>Te recomiendo que para repasar esta parte mires esta explicación en <a data-href="2. La Imagen Digital" href="2.-la-imagen-digital.html" class="internal-link" target="_self" rel="noopener nofollow">2. La Imagen Digital</a>.<br>La novedad es que WOW, podemos representar esto como una matriz.<br><br>El vector resultante estará en coordenadas homogéneas, para obtener el vector no homogéneo se divide por la tercer componente.<br><br>Sin embargo, esto solo funciona en una situación ideal y presenta los siguientes problemas:<br>
+<br>
+Distorsión de perspectiva: Aunque la proyección en perspectiva es deseable para algunas aplicaciones, no representa la realidad con suficiente precisión cuando se usan lentes reales.
+
+<br>
+No considera distorsiones que se producen en cámaras reales, especialmente en cámaras con lentes (como la distorsión radial o tangencial).
+
+<br>
+Calibración: El modelo pinhole es demasiado ideal para aplicaciones que requieren geometría precisa, como en visión artificial o reconstrucción 3D.
+
+<br><img alt="Pasted image 20241029191812.png" src="añadidos/pasted-image-20241029191812.png"><br><br>Para mejorar la precisión del modelo pinhole, se introduce el modelo pinhole mejorado, que incluye parámetros adicionales para reflejar mejor las características y distorsiones reales de una cámara. Estos parámetros son esenciales para corregir el modelo básico en aplicaciones que requieren alta precisión, como la visión artificial o la reconstrucción 3D.<br>Mejoras del modelo Pin-Hole:<br>
+<br>
+Distorsión Radial: Debido a la curvatura de las lentes, los puntos en el borde de la imagen se ven distorsionados, especialmente aquellos alejados del centro óptico. Esta distorsión se modela mediante parámetros , , y en algunos casos , que ajustan el efecto de la distorsión radial en el modelo mejorado.
+
+
+donde  representa la distancia desde el centro óptico al punto proyectado en la imagen.
+
+<br><img alt="Pasted image 20241029192401.png" src="añadidos/pasted-image-20241029192401.png"><br>
+<br>
+Distorsión Tangencial: Esta distorsión ocurre debido al desalineamiento de los elementos en la lente. Se modela con los parámetros  y :
+
+
+
+<br><img alt="Pasted image 20241029192458.png" src="añadidos/pasted-image-20241029192458.png"><br>
+<br>
+Parámetros Intrínsecos de la Cámara: Además de las distorsiones, el modelo mejorado incluye parámetros intrínsecos que especifican el centro óptico  y el factor de escala de la imagen en los ejes  y , es decir,  y . Estos parámetros permiten modelar variaciones en la distancia focal en los ejes horizontales y verticales de la cámara.
+La matriz de calibración de la cámara es:
+
+donde:
+
+<br> y  representan las distancias focales en los ejes  y  respectivamente,
+<br> es el centro de la imagen en el plano de imagen.
+
+
+<br>Ecuación Final del Modelo Mejorado<br>La proyección de un punto  en el espacio 3D hacia un punto  en la imagen, considerando tanto los efectos de distorsión como los de calibración de cámara, es:<br><br><br>donde se aplican las correcciones de distorsión radial y tangencial para obtener las coordenadas corregidas .<br>Este modelo avanzado compensa los efectos no ideales de las lentes y la cámara, proporcionando una representación de la proyección más precisa y ajustada a la geometría de la cámara real.<br><br>Los parámetros extrínsecos de una cámara definen su posición y orientación en relación al sistema de referencia global. Es decir, describen cómo se encuentra ubicada y orientada la cámara en el espacio 3D en relación a un marco de referencia, permitiéndonos transformar las coordenadas de un punto en el mundo a las coordenadas de la cámara.<br>¿Por Qué Son Importantes los Parámetros Extrínsecos?<br>
+Cuando se proyecta un punto desde el espacio 3D hacia una imagen 2D, necesitamos saber desde dónde y en qué dirección está "mirando" la cámara. Los parámetros extrínsecos nos permiten alinear el sistema de coordenadas de la cámara con el sistema de referencia del mundo, esencial en aplicaciones como:<br>
+<br>Reconstrucción 3D: para mapear correctamente puntos en el mundo real.
+<br>Seguimiento de objetos: para conocer el movimiento de un objeto relativo a la cámara.
+<br>Realidad aumentada: para alinear objetos virtuales con el entorno real desde la perspectiva de la cámara.
+<br>Desglose de los Parámetros Extrínsecos<br>
+<br>
+Matriz de Rotación ():
+
+<br>Una matriz de tamaño  que representa la orientación de la cámara en relación al sistema de referencia global.
+<br>Aplica una rotación a los puntos del sistema de coordenadas del mundo para alinearlos con la orientación de la cámara.
+
+La matriz de rotación tiene la forma:
+
+
+<br>
+Vector de Traslación ():
+
+<br>Un vector  que indica la posición de la cámara en el espacio 3D en relación al sistema de referencia global.
+<br>Traslada el sistema de coordenadas de la cámara de forma que el origen del sistema de referencia global quede en el lugar correcto relativo a la cámara.
+
+El vector de traslación tiene la forma:
+
+
+<br> Transformación Completa: De Coordenadas del Mundo a Coordenadas de la Cámara<br>
+Para convertir un punto en el espacio del mundo  a las coordenadas de la cámara , usamos la siguiente fórmula:<br><br>donde  aplica la rotación y  aplica la traslación. Expandiendo esto:<br><br>Esto transforma un punto  en coordenadas del mundo a coordenadas de la cámara , las cuales se pueden usar luego para la proyección al plano de la imagen.<br>Matriz de Transformación Extrínseca Completa<br>
+Combinando la rotación y la traslación en una sola matriz  llamada matriz de transformación extrínseca, podemos escribir:<br><br>donde:<br><br>Esta matriz  permite transformar cualquier punto 3D del espacio del mundo al espacio de la cámara en una única multiplicación de matrices, esencial para realizar transformaciones consistentes y precisas en el análisis de imágenes y aplicaciones en 3D.<br><br>La calibración de la cámara es el proceso de determinar los parámetros intrínsecos y parámetros extrínsecos que relacionan un sistema de coordenadas del mundo con el sistema de la cámara y finalmente con el plano de la imagen. La calibración permite proyectar puntos en el espacio 3D a puntos en la imagen de manera precisa, lo cual es esencial en aplicaciones de visión artificial, reconstrucción 3D y mapeo.<br>El resultado que obtenemos de los parámetros intrísecos y extrínsecos es la matriz proyectiva:<br><br>Lo que hace que encontrar las coordenadas en la imagen se haga de la siguiente manera:<br><br><br><img alt="Pasted image 20241108180646.png" src="añadidos/pasted-image-20241108180646.png"><br>Se suele utilizar un método que usa "Tableros de Ajedrez", mediante un algoritmo reconoce las esquinas de este tablero y se obtienen todos los parámetros instrínsecos (Matriz de intrinseca , Coeficientes de distorsión ) y extrínsecos (Matriz de Rotación y traslación )<br><img alt="Pasted image 20241108181814.png" src="añadidos/pasted-image-20241108181814.png"><br>Aqui un ejemplo de código de como se hace el algoritmo en python:<br>import cv2
+import numpy as np
+
+# Tamaño del tablero (número de esquinas interiores)
+pattern_size = (9, 6)  # 9x6 es común, ajústalo según tu tablero
+
+# Tamaño de cada cuadrado en el tablero (por ejemplo, 25 mm)
+square_size = 25
+
+# Preparar puntos 3D en el espacio del mundo (0,0,0), (1,0,0), ..., (8,5,0)
+objp = np.zeros((pattern_size[0]*pattern_size[1], 3), np.float32)
+objp[:,:2] = np.mgrid[0:pattern_size[0], 0:pattern_size[1]].T.reshape(-1, 2)
+objp *= square_size
+
+# Listas para almacenar puntos 3D y 2D
+objpoints = []  # Puntos 3D en el espacio del mundo
+imgpoints = []  # Puntos 2D en el plano de la imagen
+
+# Cargar imágenes de calibración
+images = [f'image{i}.jpg' for i in range(1, 21)]  # Suponiendo 20 imágenes
+
+for fname in images:
+    img = cv2.imread(fname)
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+    # Encontrar las esquinas del tablero de ajedrez
+    ret, corners = cv2.findChessboardCorners(gray, pattern_size, None)
+
+    if ret:
+        objpoints.append(objp)
+        # Refinar ubicaciones de las esquinas
+        corners2 = cv2.cornerSubPix(gray, corners, (11,11), (-1,-1), 
+                                    criteria=(cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 30, 0.001))
+        imgpoints.append(corners2)
+
+        # Dibujar y mostrar las esquinas detectadas (opcional)
+        img = cv2.drawChessboardCorners(img, pattern_size, corners2, ret)
+        cv2.imshow('Corners', img)
+        cv2.waitKey(100)
+
+cv2.destroyAllWindows()
+
+# Calibración de la cámara
+ret, mtx, dist, rvecs, tvecs = cv2.calibrateCamera(objpoints, imgpoints, gray.shape[::-1], None, None)
+
+# Imprimir los parámetros obtenidos
+print("Matriz intrínseca:\n", mtx)
+print("Coeficientes de distorsión:\n", dist)
+print("Vectores de rotación:\n", rvecs)
+print("Vectores de traslación:\n", tvecs)
+
+Copy]]></description><link>5.-modelo-proyectivo.html</link><guid isPermaLink="false">5. Modelo Proyectivo.md</guid><pubDate>Fri, 08 Nov 2024 17:18:56 GMT</pubDate><enclosure url="añadidos/pasted-image-20241029174230.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="añadidos/pasted-image-20241029174230.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[1. Módulo de Adquisición]]></title><description><![CDATA[ 
  <br>En esta sección vamos a conocer los distintos elementos hardware que integran el módulo de adquisición SIVA<br><br>La luz es una&nbsp;onda electromagnética capaz de ser percibida por el ojo humano y cuya frecuencia determina su color.<br>Espectro Visible:<br><img alt="Captura desde 2024-10-26 17-50-36.png" src="añadidos/captura-desde-2024-10-26-17-50-36.png"><br><br>Para poder formar una imagen digital capturada del mundo real, vamos a necesitar los siguientes elementos fundamentales:<br>
 <br>Una fuente de Luz: 
 <br>Un objeto que reciba la luz, la refleje : 
@@ -101,79 +285,7 @@ Alta Velocidad: Proporcionan altas velocidades de lectura, útiles para aplicaci
 <br>Calidad de Imagen Inferior: Aunque han mejorado, en algunas aplicaciones pueden ofrecer una calidad de imagen inferior comparada con los CCD.
 <br>Aplicaciones<br>
 <br>Usados en cámaras de teléfonos móviles, cámaras digitales de bajo consumo, y en la mayoría de los dispositivos de imagen de bajo costo.
-<br><br>Otra comparativa de estas tecnologías es que los dispositivos CMOS tienen menos efecto Blooming o Efecto Halo a diferencia de los CCD, en cambio los CCD tienen menos efector Rolling Shutter<br>Blooming: es un efecto que ocurre principalmente en los sensores CCD. Aparece cuando un píxel se sobresatura al recibir más luz de la que puede manejar, lo que provoca que la carga de ese píxel "rebose" a los píxeles vecinos, generando halos brillantes o áreas sobreexpuestas en la imagen.<br><a data-tooltip-position="top" aria-label="https://www.youtube.com/watch?v=-DoTgQbALU0" rel="noopener nofollow" class="external-link" href="https://www.youtube.com/watch?v=-DoTgQbALU0" target="_blank">Ejemplo de comparación con <code></code></a>Blooming<br>Rolling Shutter: es un artefacto que aparece principalmente en sensores CMOS. En lugar de capturar toda la imagen a la vez, los sensores CMOS suelen leer cada fila de píxeles de forma secuencial. Esto crea un desfase temporal en la captura de la imagen, lo cual produce distorsiones en objetos en movimiento o en escenas con movimientos rápidos.<br><a data-tooltip-position="top" aria-label="https://www.youtube.com/watch?v=dNVtMmLlnoE" rel="noopener nofollow" class="external-link" href="https://www.youtube.com/watch?v=dNVtMmLlnoE" target="_blank">Explicación del <code></code></a>Rolling Shutter]]></description><link>1.-módulo-de-adquisición.html</link><guid isPermaLink="false">1. Módulo de Adquisición.md</guid><pubDate>Sun, 27 Oct 2024 10:04:11 GMT</pubDate><enclosure url="añadidos/captura-desde-2024-10-26-17-50-36.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;añadidos/captura-desde-2024-10-26-17-50-36.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2. La Imagen Digital]]></title><description><![CDATA[ 
- <br>En esta sección introduciremos la formación de la imagen y algunos procesos que se aplican a esta.<br><br>Ocurre un problema a la hora de hacer una fotografía y es la siguiente;<br>Lógicamente cuando hacemos una fotografía la hacemos de un objeto de 3 dimensiones con coordenadas , pero una imagen al fin y al cabo es una matriz de filas y columnas es decir se expresan en coordenadas , perder la componente  no es beneficioso.<br>¿Como podría obtener una posición concreta del objeto de la vida real, pero en la imagen?<br>Vamos a representar ambas posiciones en este sistema:<br><br>PONER EXPLICACIÓN<br>Se obtiene que:<br><br><br>Muestreo:<br>
-El muestreo es el proceso de convertir una imagen continua en una representación digital. En una imagen continua (como una fotografía), cada punto puede tomar valores precisos de intensidad o color en el espacio continuo. <br>Al digitalizar esta imagen para almacenamiento o procesamiento, se deben tomar muestras en intervalos regulares para obtener una cuadrícula de puntos o píxeles que representan la imagen.<br>
-<br>Frecuencia de Muestreo: La frecuencia con la que se toman muestras afecta directamente la calidad de la imagen digital. De acuerdo con el Teorema de Nyquist, la frecuencia de muestreo debe ser al menos el doble de la frecuencia máxima de la imagen (detalle más pequeño) para evitar la pérdida de información.
-<br>Resolución de la Imagen: La cantidad de muestras tomadas por unidad de área determina la resolución. Cuanto mayor sea la resolución, más fiel será la representación digital de la imagen continua original.
-<br><img alt="Captura desde 2024-10-27 10-05-52.png" src="añadidos/captura-desde-2024-10-27-10-05-52.png"><br> Aliasing en Imágenes:<br>El aliasing ocurre cuando la frecuencia de muestreo es insuficiente para capturar todos los detalles de la imagen continua. Cuando esto sucede, los detalles de alta frecuencia (como líneas finas o texturas detalladas) aparecen distorsionados o producen patrones irreales y no deseados en la imagen digital. Algunos efectos comunes del aliasing incluyen:<br>
-<br>Efecto Moiré: Un patrón de interferencia que aparece cuando se superponen patrones repetitivos, como líneas finas, y no se muestrean adecuadamente.
-<br>Escalones y Bordes Dentados: Las líneas y curvas aparecen dentadas o en bloques debido a la baja resolución o al muestreo insuficiente, un fenómeno conocido como "aliasing espacial."
-<br><img alt="Captura desde 2024-10-27 10-06-17.png" src="añadidos/captura-desde-2024-10-27-10-06-17.png"><br>Ejemplo de Aliasing<br>En una foto de una reja con líneas muy finas, si no se usa la frecuencia de muestreo adecuada, puede aparecer un patrón de interferencia o efecto Moiré en la imagen digital, donde algunas líneas parecen moverse o aparecer duplicadas.<br><img alt="Captura desde 2024-10-27 10-06-35.png" src="añadidos/captura-desde-2024-10-27-10-06-35.png"><br><br>Conversión de energía luminosa a voltaje:<br>
-, es un modelo que describe la relación entre la señal de salida de un sensor de imagen (voltaje  ) y la intensidad de luz  que incide sobre el sensor. Cada componente de la ecuación tiene un papel específico:<br>
-<br>
-: Es el voltaje de salida o la señal generada por el sensor de imagen. Este valor está relacionado con la intensidad luminosa capturada en cada píxel y se convierte finalmente en el valor digital que se representa en la imagen.
-
-<br>
-: Es una constante de ganancia que ajusta el nivel de respuesta del sensor a la luz. Aumentar  implica que el sensor responderá más intensamente ante la misma cantidad de luz, amplificando la señal de salida.
-
-<br>
-: Es la intensidad de luz que incide sobre el píxel del sensor. Es la variable principal de entrada y representa la cantidad de energía luminosa que el sensor recibe.
-
-<br>
-: Es el parámetro de gamma o exponente no lineal que define cómo el sensor responde a diferentes niveles de luz. La gamma modifica la relación entre la luz que incide en el sensor y la señal de salida.
-
-<br>Si , la relación es lineal: la salida del sensor es proporcional a la intensidad de luz .
-<br>Si , la respuesta es sub-lineal, lo cual da más importancia a los tonos oscuros y aumenta el detalle en sombras.
-<br>Si , la respuesta es sobre-lineal, lo cual aumenta el contraste en las áreas claras.
-
-Este parámetro es importante para ajustar la respuesta del sensor y es común en el procesamiento de imágenes y la corrección gamma en pantallas.
-
-<br>
- : Es un desplazamiento u offset que ajusta el nivel base de la señal, permitiendo que el sensor maneje niveles de luz de fondo o configuraciones de exposición específicas. Este término asegura que el voltaje de salida tenga una referencia o punto de partida adecuado en ausencia de luz (o en condiciones específicas de exposición).
-
-<br><img alt="Captura desde 2024-10-27 10-49-30.png" src="añadidos/captura-desde-2024-10-27-10-49-30.png"><br>Cuantificación:<br>
-Una vez que la luz ha sido convertida en voltaje, este valor analógico debe convertirse en un valor digital para que pueda procesarse y almacenarse en dispositivos electrónicos. Aquí es donde entra en juego la cuantificación mediante un convertidor analógico a digital (ADC):<br>
-<br>Discretización del Voltaje: El rango de voltajes posibles en el sensor se divide en niveles discretos. Por ejemplo, en una imagen de 8 bits, hay 256 niveles posibles (0 a 255), donde cada nivel representa un rango específico de voltajes.<br>
-
-<br>Asignación de Niveles de Intensidad: El ADC asigna a cada píxel un valor numérico correspondiente al nivel de voltaje que ha medido, generando así una representación digital de la imagen. En una imagen en escala de grises de 8 bits, un valor de 0 representaría negro absoluto (sin luz), y 255 representaría blanco absoluto (máxima intensidad de luz).<br>
-
-<br>Profundidad de Bits: La cantidad de niveles de cuantificación está determinada por la profundidad de bits. A mayor profundidad de bits (por ejemplo, 10 bits o 12 bits), más niveles de intensidad se pueden representar, lo que permite una gama de tonos más amplia y una calidad de imagen más detallada. Sin embargo, esto también implica un mayor uso de almacenamiento y potencia de procesamiento.
-<br><br>RGB:<br>
-Se basa en representar cualquier color con los 3 colores primarios, en su gama de intensidades. Mejor la que el ordenador lo represente.<br><img alt="Pasted image 20241027105317.png" src="añadidos/pasted-image-20241027105317.png"><br>HSV:<br>
-Se basa en función de 3 caracteristicas del color, Hue, Saturation y Value.<br>
-Mejor interpretado por el ojo humano.<br><img alt="Pasted image 20241027105331.png" src="añadidos/pasted-image-20241027105331.png"><br><br>Un histograma de una imagen es un gráfico de frecuencias de cada uno de los píxeles de la imagen. <br><img alt="Pasted image 20241027105930.png" src="añadidos/pasted-image-20241027105930.png"><br>
-<br>Análisis de Contraste:
-<br>
-<br>
-Un histograma que abarca todo el rango de intensidades (desde el negro hasta el blanco) indica una buena distribución del contraste.
-
-<br>
-Un histograma concentrado en un extremo sugiere que la imagen podría estar subexpuesta (concentrado a la izquierda) o sobreexpuesta (concentrado a la derecha).
-
-<br>
-<br>Ecualización de Histogramas:
-<br>
-<br>
-Este es un método para mejorar el contraste de una imagen al redistribuir los niveles de intensidad.
-
-<br>
-Al ecualizar un histograma, se busca que la distribución de los píxeles se extienda a través de todo el rango disponible, lo que resulta en una imagen con mayor contraste y más detalles.
-
-<br>Clasificación de imágenes según su histograma<br>
-<br>
-Imagen Subexpuesta:<br>
-Histograma concentrado a la izquierda, indicando que la mayoría de los píxeles son oscuros.
-
-<br>
-Imagen Sobreexpuesta:<br>
-Histograma concentrado a la derecha, mostrando que la mayoría de los píxeles son claros.
-
-<br>
-Imagen Bien Expuesta:<br>
-Histograma que abarca un rango amplio desde la izquierda hasta la derecha, indicando una buena distribución de tonos.
-
-<br><img alt="Captura desde 2024-10-27 11-00-48.png" src="añadidos/captura-desde-2024-10-27-11-00-48.png">]]></description><link>2.-la-imagen-digital.html</link><guid isPermaLink="false">2. La Imagen Digital.md</guid><pubDate>Sun, 27 Oct 2024 10:00:55 GMT</pubDate><enclosure url="añadidos/captura-desde-2024-10-27-10-05-52.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;añadidos/captura-desde-2024-10-27-10-05-52.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[3. Procesado de la Imagen Digital]]></title><description><![CDATA[ 
+<br><br>Otra comparativa de estas tecnologías es que los dispositivos CMOS tienen menos efecto Blooming o Efecto Halo a diferencia de los CCD, en cambio los CCD tienen menos efector Rolling Shutter<br>Blooming: es un efecto que ocurre principalmente en los sensores CCD. Aparece cuando un píxel se sobresatura al recibir más luz de la que puede manejar, lo que provoca que la carga de ese píxel "rebose" a los píxeles vecinos, generando halos brillantes o áreas sobreexpuestas en la imagen.<br><a data-tooltip-position="top" aria-label="https://www.youtube.com/watch?v=-DoTgQbALU0" rel="noopener nofollow" class="external-link" href="https://www.youtube.com/watch?v=-DoTgQbALU0" target="_blank">Ejemplo de comparación con <code></code></a>Blooming<br>Rolling Shutter: es un artefacto que aparece principalmente en sensores CMOS. En lugar de capturar toda la imagen a la vez, los sensores CMOS suelen leer cada fila de píxeles de forma secuencial. Esto crea un desfase temporal en la captura de la imagen, lo cual produce distorsiones en objetos en movimiento o en escenas con movimientos rápidos.<br><a data-tooltip-position="top" aria-label="https://www.youtube.com/watch?v=dNVtMmLlnoE" rel="noopener nofollow" class="external-link" href="https://www.youtube.com/watch?v=dNVtMmLlnoE" target="_blank">Explicación del <code></code></a>Rolling Shutter]]></description><link>1.-módulo-de-adquisición.html</link><guid isPermaLink="false">1. Módulo de Adquisición.md</guid><pubDate>Sun, 27 Oct 2024 10:04:11 GMT</pubDate><enclosure url="añadidos/captura-desde-2024-10-26-17-50-36.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="añadidos/captura-desde-2024-10-26-17-50-36.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[3. Procesado de la Imagen Digital]]></title><description><![CDATA[ 
  <br>En esta sección hablaremos de algunas técnicas de procesado de la imagen;<br>
 en el Dominio Espacial en concreto puntual o con varias imágenes y basado en la vecindad.<br>Antes de comenzar me gustaría aclarar el concepto de Rango Dinámico de una imagen.<br>
 <br>
@@ -203,7 +315,7 @@ Multiplicación/División: pueden servir para reducir iluminaciones no deseadas 
 <br>
 Operaciones Lógicas: Útiles para la composición de imágenes.
 
-]]></description><link>3.-procesado-de-la-imagen-digital.html</link><guid isPermaLink="false">3. Procesado de la Imagen Digital.md</guid><pubDate>Sun, 27 Oct 2024 11:21:39 GMT</pubDate><enclosure url="añadidos/captura-desde-2024-10-27-11-56-20.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;añadidos/captura-desde-2024-10-27-11-56-20.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[4. Procesado Basado en la Vecindad]]></title><description><![CDATA[ 
+]]></description><link>3.-procesado-de-la-imagen-digital.html</link><guid isPermaLink="false">3. Procesado de la Imagen Digital.md</guid><pubDate>Sun, 27 Oct 2024 11:21:39 GMT</pubDate><enclosure url="añadidos/captura-desde-2024-10-27-11-56-20.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="añadidos/captura-desde-2024-10-27-11-56-20.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[4. Procesado Basado en la Vecindad]]></title><description><![CDATA[ 
  <br>En el procesamiento de imágenes, la vecindad de un píxel se refiere al conjunto de píxeles circundantes que rodean a un píxel central específico dentro de una imagen. <br>Estos píxeles vecinos son considerados cuando se aplican ciertos filtros y operaciones de procesamiento de imágenes que dependen del contexto local de cada píxel, como en operaciones de suavizado, detección de bordes y reducción de ruido.<br><br>La interpolación es una técnica para estimar valores de píxeles en posiciones que no coinciden con un píxel exacto de la imagen original. Es útil en operaciones como cambio de tamaño, rotación y distorsión de imágenes. <br>A continuación, se presentan tres métodos comunes: Vecino Más Cercano (NN), Bilineal y Bicúbica.<br>Vecino Más Cercano (Nearest Neighbor - NN):<br>Este es el método más simple y rápido, que asigna a un píxel el valor del píxel más cercano de la imagen original.<br>
 <br>Método: Se busca el píxel en la imagen original más cercano a la posición en la imagen de salida y se asigna su valor al píxel de salida.
 <br>Ventajas: Muy rápido y eficiente en cuanto a cómputo.
@@ -271,9 +383,4 @@ Efecto Visual: La erosión tiende a adelgazar las áreas blancas de la imagen y 
 <br>Definición: La dilatación de una imagen  por un elemento estructurante  consiste en expandir las zonas de intensidad alta (blancas). En una imagen binaria, un píxel se convierte en 1 si algún píxel en la vecindad definida por el elemento estructurante es 1.<br>
 
 <br>Efecto Visual: La dilatación aumenta el tamaño de las áreas blancas y tiende a unir pequeñas regiones que están próximas, rellenando espacios entre objetos.
-<br>En definitiva y lo importante que te tienes que quedar, es que en la dilatación te quedas con el píxel activo más grande y en la erosión con el más pequeño.<br><img alt="Captura desde 2024-10-28 03-28-51.png" src="añadidos/captura-desde-2024-10-28-03-28-51.png"><br>]]></description><link>4.-procesado-basado-en-la-vecindad.html</link><guid isPermaLink="false">4. Procesado Basado en la Vecindad.md</guid><pubDate>Tue, 29 Oct 2024 07:53:51 GMT</pubDate><enclosure url="añadidos/captura-desde-2024-10-27-21-21-48.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;añadidos/captura-desde-2024-10-27-21-21-48.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[5. Modelo Pin-Hole]]></title><description><![CDATA[ 
- ]]></description><link>5.-modelo-pin-hole.html</link><guid isPermaLink="false">5. Modelo Pin-Hole.md</guid><pubDate>Tue, 29 Oct 2024 08:03:25 GMT</pubDate></item><item><title><![CDATA[index]]></title><description><![CDATA[ 
- <br><a data-href="1. Módulo de Adquisición" href="1.-módulo-de-adquisición.html" class="internal-link" target="_self" rel="noopener nofollow">1. Módulo de Adquisición</a><br>
-<a data-href="2. La Imagen Digital" href="2.-la-imagen-digital.html" class="internal-link" target="_self" rel="noopener nofollow">2. La Imagen Digital</a><br>
-<a data-href="3. Procesado de la Imagen Digital" href="3.-procesado-de-la-imagen-digital.html" class="internal-link" target="_self" rel="noopener nofollow">3. Procesado de la Imagen Digital</a><br>
-<a data-href="4. Procesado Basado en la Vecindad" href="4.-procesado-basado-en-la-vecindad.html" class="internal-link" target="_self" rel="noopener nofollow">4. Procesado Basado en la Vecindad</a>]]></description><link>index.html</link><guid isPermaLink="false">index.md</guid><pubDate>Sun, 27 Oct 2024 23:03:38 GMT</pubDate></item></channel></rss>
+<br>En definitiva y lo importante que te tienes que quedar, es que en la dilatación te quedas con el píxel activo más grande y en la erosión con el más pequeño.<br><img alt="Captura desde 2024-10-28 03-28-51.png" src="añadidos/captura-desde-2024-10-28-03-28-51.png"><br>]]></description><link>4.-procesado-basado-en-la-vecindad.html</link><guid isPermaLink="false">4. Procesado Basado en la Vecindad.md</guid><pubDate>Tue, 29 Oct 2024 07:53:51 GMT</pubDate><enclosure url="añadidos/captura-desde-2024-10-27-21-21-48.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="añadidos/captura-desde-2024-10-27-21-21-48.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
