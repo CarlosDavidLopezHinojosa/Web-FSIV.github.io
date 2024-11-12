@@ -1,6 +1,6 @@
 {
   "vaultName": "Apuntes de FSIV",
-  "lastExport": 1731429374471,
+  "lastExport": 1731429602151,
   "pluginVersion": "1.8.01",
   "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title show-ribbon",
   "useCustomHeadContent": false,
@@ -113,43 +113,7 @@
     "lib/scripts/graph-data.js",
     "lib/styles/obsidian.css",
     "lib/styles/global-variable-styles.css",
-    "lib/styles/main-styles.css",
-    "añadidos/captura-desde-2024-10-26-17-50-36.png",
-    "añadidos/captura-desde-2024-10-26-18-00-57.png",
-    "añadidos/captura-desde-2024-10-26-18-06-08.png",
-    "añadidos/captura-desde-2024-10-26-18-31-23.png",
-    "añadidos/captura-desde-2024-10-26-18-41-55.png",
-    "añadidos/captura-desde-2024-10-26-20-09-08.png",
-    "añadidos/pasted-image-20241026191840.png",
-    "añadidos/captura-desde-2024-10-27-09-07-28.png",
-    "añadidos/captura-desde-2024-10-27-09-12-27.png",
-    "añadidos/pasted-image-20241029175542.png",
-    "añadidos/captura-desde-2024-10-27-10-05-52.png",
-    "añadidos/captura-desde-2024-10-27-10-06-17.png",
-    "añadidos/captura-desde-2024-10-27-10-06-35.png",
-    "añadidos/captura-desde-2024-10-27-10-49-30.png",
-    "añadidos/pasted-image-20241027105317.png",
-    "añadidos/pasted-image-20241027105331.png",
-    "añadidos/pasted-image-20241027105930.png",
-    "añadidos/captura-desde-2024-10-27-11-00-48.png",
-    "añadidos/captura-desde-2024-10-27-11-56-20.png",
-    "añadidos/captura-desde-2024-10-27-21-21-48.png",
-    "añadidos/captura-desde-2024-10-27-21-22-27.png",
-    "añadidos/captura-desde-2024-10-27-21-23-02.png",
-    "añadidos/captura-desde-2024-10-27-21-23-25.png",
-    "añadidos/captura-desde-2024-10-27-21-23-51.png",
-    "añadidos/captura-desde-2024-10-28-02-01-02.png",
-    "añadidos/captura-desde-2024-10-28-02-14-30.png",
-    "añadidos/captura-desde-2024-10-28-02-23-38.png",
-    "añadidos/captura-desde-2024-10-28-03-15-03.png",
-    "añadidos/captura-desde-2024-10-28-03-21-55.png",
-    "añadidos/captura-desde-2024-10-28-03-28-51.png",
-    "añadidos/pasted-image-20241029174230.png",
-    "añadidos/pasted-image-20241029191812.png",
-    "añadidos/pasted-image-20241029192401.png",
-    "añadidos/pasted-image-20241029192458.png",
-    "añadidos/pasted-image-20241108180646.png",
-    "añadidos/pasted-image-20241108181814.png"
+    "lib/styles/main-styles.css"
   ],
   "mainDependencies": [
     "lib/scripts/graph-wasm.wasm",
@@ -205,235 +169,313 @@
   ],
   "fileInfo": {
     "Añadidos/Captura desde 2024-10-26 17-50-36.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 69388,
       "exportedPath": "añadidos/captura-desde-2024-10-26-17-50-36.png",
       "dependencies": []
     },
     "Añadidos/Captura desde 2024-10-26 18-00-57.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 38146,
       "exportedPath": "añadidos/captura-desde-2024-10-26-18-00-57.png",
       "dependencies": []
     },
     "Añadidos/Captura desde 2024-10-26 18-06-08.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 120188,
       "exportedPath": "añadidos/captura-desde-2024-10-26-18-06-08.png",
       "dependencies": []
     },
     "Añadidos/Captura desde 2024-10-26 18-31-23.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 38744,
       "exportedPath": "añadidos/captura-desde-2024-10-26-18-31-23.png",
       "dependencies": []
     },
     "Añadidos/Captura desde 2024-10-26 18-41-55.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 267069,
       "exportedPath": "añadidos/captura-desde-2024-10-26-18-41-55.png",
       "dependencies": []
     },
     "Añadidos/Captura desde 2024-10-26 20-09-08.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 22955,
       "exportedPath": "añadidos/captura-desde-2024-10-26-20-09-08.png",
       "dependencies": []
     },
     "Añadidos/Captura desde 2024-10-27 09-07-28.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 62518,
       "exportedPath": "añadidos/captura-desde-2024-10-27-09-07-28.png",
       "dependencies": []
     },
     "Añadidos/Captura desde 2024-10-27 09-12-27.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 95769,
       "exportedPath": "añadidos/captura-desde-2024-10-27-09-12-27.png",
       "dependencies": []
     },
     "Añadidos/Captura desde 2024-10-27 10-05-52.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 77377,
       "exportedPath": "añadidos/captura-desde-2024-10-27-10-05-52.png",
       "dependencies": []
     },
     "Añadidos/Captura desde 2024-10-27 10-06-17.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 76765,
       "exportedPath": "añadidos/captura-desde-2024-10-27-10-06-17.png",
       "dependencies": []
     },
     "Añadidos/Captura desde 2024-10-27 10-06-35.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 256114,
       "exportedPath": "añadidos/captura-desde-2024-10-27-10-06-35.png",
       "dependencies": []
     },
     "Añadidos/Captura desde 2024-10-27 10-49-30.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 85656,
       "exportedPath": "añadidos/captura-desde-2024-10-27-10-49-30.png",
       "dependencies": []
     },
     "Añadidos/Captura desde 2024-10-27 11-00-48.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 164003,
       "exportedPath": "añadidos/captura-desde-2024-10-27-11-00-48.png",
       "dependencies": []
     },
     "Añadidos/Captura desde 2024-10-27 11-56-20.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 79557,
       "exportedPath": "añadidos/captura-desde-2024-10-27-11-56-20.png",
       "dependencies": []
     },
     "Añadidos/Captura desde 2024-10-27 21-21-48.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 24042,
       "exportedPath": "añadidos/captura-desde-2024-10-27-21-21-48.png",
       "dependencies": []
     },
     "Añadidos/Captura desde 2024-10-27 21-22-27.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 60860,
       "exportedPath": "añadidos/captura-desde-2024-10-27-21-22-27.png",
       "dependencies": []
     },
     "Añadidos/Captura desde 2024-10-27 21-23-02.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 59831,
       "exportedPath": "añadidos/captura-desde-2024-10-27-21-23-02.png",
       "dependencies": []
     },
     "Añadidos/Captura desde 2024-10-27 21-23-25.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 54604,
       "exportedPath": "añadidos/captura-desde-2024-10-27-21-23-25.png",
       "dependencies": []
     },
     "Añadidos/Captura desde 2024-10-27 21-23-51.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 26571,
       "exportedPath": "añadidos/captura-desde-2024-10-27-21-23-51.png",
       "dependencies": []
     },
     "Añadidos/Captura desde 2024-10-28 02-01-02.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 124631,
       "exportedPath": "añadidos/captura-desde-2024-10-28-02-01-02.png",
       "dependencies": []
     },
     "Añadidos/Captura desde 2024-10-28 02-14-30.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 243430,
       "exportedPath": "añadidos/captura-desde-2024-10-28-02-14-30.png",
       "dependencies": []
     },
     "Añadidos/Captura desde 2024-10-28 02-23-38.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 33088,
       "exportedPath": "añadidos/captura-desde-2024-10-28-02-23-38.png",
       "dependencies": []
     },
     "Añadidos/Captura desde 2024-10-28 03-15-03.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 154720,
       "exportedPath": "añadidos/captura-desde-2024-10-28-03-15-03.png",
       "dependencies": []
     },
     "Añadidos/Captura desde 2024-10-28 03-21-55.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 94952,
       "exportedPath": "añadidos/captura-desde-2024-10-28-03-21-55.png",
       "dependencies": []
     },
     "Añadidos/Captura desde 2024-10-28 03-28-51.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 274437,
       "exportedPath": "añadidos/captura-desde-2024-10-28-03-28-51.png",
       "dependencies": []
     },
     "Añadidos/Pasted image 20241026191840.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 371888,
       "exportedPath": "añadidos/pasted-image-20241026191840.png",
       "dependencies": []
     },
     "Añadidos/Pasted image 20241027105317.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 114202,
       "exportedPath": "añadidos/pasted-image-20241027105317.png",
       "dependencies": []
     },
     "Añadidos/Pasted image 20241027105331.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 107116,
       "exportedPath": "añadidos/pasted-image-20241027105331.png",
       "dependencies": []
     },
     "Añadidos/Pasted image 20241027105930.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 87119,
       "exportedPath": "añadidos/pasted-image-20241027105930.png",
       "dependencies": []
     },
     "Añadidos/Pasted image 20241029174230.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 115917,
       "exportedPath": "añadidos/pasted-image-20241029174230.png",
       "dependencies": []
     },
     "Añadidos/Pasted image 20241029175542.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 42822,
       "exportedPath": "añadidos/pasted-image-20241029175542.png",
       "dependencies": []
     },
     "Añadidos/Pasted image 20241029191812.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 402935,
       "exportedPath": "añadidos/pasted-image-20241029191812.png",
       "dependencies": []
     },
     "Añadidos/Pasted image 20241029192401.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 39119,
       "exportedPath": "añadidos/pasted-image-20241029192401.png",
       "dependencies": []
     },
     "Añadidos/Pasted image 20241029192429.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 18940,
       "exportedPath": "añadidos/pasted-image-20241029192429.png",
       "dependencies": []
     },
     "Añadidos/Pasted image 20241029192458.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 18940,
       "exportedPath": "añadidos/pasted-image-20241029192458.png",
       "dependencies": []
     },
     "Añadidos/Pasted image 20241108174211.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 59302,
       "exportedPath": "añadidos/pasted-image-20241108174211.png",
       "dependencies": []
     },
     "Añadidos/Pasted image 20241108180646.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 59001,
       "exportedPath": "añadidos/pasted-image-20241108180646.png",
       "dependencies": []
     },
     "Añadidos/Pasted image 20241108181814.png": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 16040,
       "exportedPath": "añadidos/pasted-image-20241108181814.png",
       "dependencies": []
     },
+    "Añadidos/Pasted image 20241112113008.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 80219,
+      "exportedPath": "añadidos/pasted-image-20241112113008.png",
+      "dependencies": []
+    },
+    "Añadidos/Pasted image 20241112113428.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 35838,
+      "exportedPath": "añadidos/pasted-image-20241112113428.png",
+      "dependencies": []
+    },
+    "Añadidos/Pasted image 20241112153318.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 23155,
+      "exportedPath": "añadidos/pasted-image-20241112153318.png",
+      "dependencies": []
+    },
+    "Añadidos/Pasted image 20241112153543.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 115435,
+      "exportedPath": "añadidos/pasted-image-20241112153543.png",
+      "dependencies": []
+    },
+    "Añadidos/Pasted image 20241112154018.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 314791,
+      "exportedPath": "añadidos/pasted-image-20241112154018.png",
+      "dependencies": []
+    },
+    "Añadidos/Pasted image 20241112154950.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 38734,
+      "exportedPath": "añadidos/pasted-image-20241112154950.png",
+      "dependencies": []
+    },
+    "Añadidos/Pasted image 20241112164926.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 49483,
+      "exportedPath": "añadidos/pasted-image-20241112164926.png",
+      "dependencies": []
+    },
+    "Añadidos/Pasted image 20241112170655.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 56246,
+      "exportedPath": "añadidos/pasted-image-20241112170655.png",
+      "dependencies": []
+    },
+    "Añadidos/Pasted image 20241112171010.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 50986,
+      "exportedPath": "añadidos/pasted-image-20241112171010.png",
+      "dependencies": []
+    },
+    "Añadidos/Pasted image 20241112171710.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 144896,
+      "exportedPath": "añadidos/pasted-image-20241112171710.png",
+      "dependencies": []
+    },
+    "Añadidos/Pasted image 20241112172306.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 132465,
+      "exportedPath": "añadidos/pasted-image-20241112172306.png",
+      "dependencies": []
+    },
+    "Añadidos/Pasted image 20241112172318.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 22115,
+      "exportedPath": "añadidos/pasted-image-20241112172318.png",
+      "dependencies": []
+    },
+    "Añadidos/Pasted image 20241112172443.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 465449,
+      "exportedPath": "añadidos/pasted-image-20241112172443.png",
+      "dependencies": []
+    },
     "1. Módulo de Adquisición.md": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 12096,
       "exportedPath": "1.-módulo-de-adquisición.html",
       "dependencies": [
@@ -450,7 +492,7 @@
       ]
     },
     "2. La Imagen Digital.md": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 8622,
       "exportedPath": "2.-la-imagen-digital.html",
       "dependencies": [
@@ -467,7 +509,7 @@
       ]
     },
     "3. Procesado de la Imagen Digital.md": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 4997,
       "exportedPath": "3.-procesado-de-la-imagen-digital.html",
       "dependencies": [
@@ -475,7 +517,7 @@
       ]
     },
     "4. Procesado Basado en la Vecindad.md": {
-      "modifiedTime": 1731087827386,
+      "modifiedTime": 1731429602151,
       "sourceSize": 13741,
       "exportedPath": "4.-procesado-basado-en-la-vecindad.html",
       "dependencies": [
@@ -493,7 +535,7 @@
       ]
     },
     "5. Modelo Proyectivo.md": {
-      "modifiedTime": 1731429374471,
+      "modifiedTime": 1731429602151,
       "sourceSize": 12621,
       "exportedPath": "5.-modelo-proyectivo.html",
       "dependencies": [
@@ -505,608 +547,8 @@
         "añadidos/pasted-image-20241108181814.png"
       ]
     },
-    "index.md": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 217,
-      "exportedPath": "index.html",
-      "dependencies": []
-    },
-    "añadidos/captura-desde-2024-10-26-17-50-36.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 69388,
-      "exportedPath": "añadidos/captura-desde-2024-10-26-17-50-36.png",
-      "dependencies": []
-    },
-    "añadidos/captura-desde-2024-10-26-18-00-57.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 38146,
-      "exportedPath": "añadidos/captura-desde-2024-10-26-18-00-57.png",
-      "dependencies": []
-    },
-    "añadidos/captura-desde-2024-10-26-18-06-08.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 120188,
-      "exportedPath": "añadidos/captura-desde-2024-10-26-18-06-08.png",
-      "dependencies": []
-    },
-    "añadidos/captura-desde-2024-10-26-18-31-23.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 38744,
-      "exportedPath": "añadidos/captura-desde-2024-10-26-18-31-23.png",
-      "dependencies": []
-    },
-    "añadidos/captura-desde-2024-10-26-18-41-55.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 267069,
-      "exportedPath": "añadidos/captura-desde-2024-10-26-18-41-55.png",
-      "dependencies": []
-    },
-    "añadidos/captura-desde-2024-10-26-20-09-08.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 22955,
-      "exportedPath": "añadidos/captura-desde-2024-10-26-20-09-08.png",
-      "dependencies": []
-    },
-    "añadidos/pasted-image-20241026191840.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 371888,
-      "exportedPath": "añadidos/pasted-image-20241026191840.png",
-      "dependencies": []
-    },
-    "añadidos/captura-desde-2024-10-27-09-07-28.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 62518,
-      "exportedPath": "añadidos/captura-desde-2024-10-27-09-07-28.png",
-      "dependencies": []
-    },
-    "añadidos/captura-desde-2024-10-27-09-12-27.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 95769,
-      "exportedPath": "añadidos/captura-desde-2024-10-27-09-12-27.png",
-      "dependencies": []
-    },
-    "añadidos/pasted-image-20241029175542.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 42822,
-      "exportedPath": "añadidos/pasted-image-20241029175542.png",
-      "dependencies": []
-    },
-    "añadidos/captura-desde-2024-10-27-10-05-52.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 77377,
-      "exportedPath": "añadidos/captura-desde-2024-10-27-10-05-52.png",
-      "dependencies": []
-    },
-    "añadidos/captura-desde-2024-10-27-10-06-17.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 76765,
-      "exportedPath": "añadidos/captura-desde-2024-10-27-10-06-17.png",
-      "dependencies": []
-    },
-    "añadidos/captura-desde-2024-10-27-10-06-35.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 256114,
-      "exportedPath": "añadidos/captura-desde-2024-10-27-10-06-35.png",
-      "dependencies": []
-    },
-    "añadidos/captura-desde-2024-10-27-10-49-30.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 85656,
-      "exportedPath": "añadidos/captura-desde-2024-10-27-10-49-30.png",
-      "dependencies": []
-    },
-    "añadidos/pasted-image-20241027105317.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 114202,
-      "exportedPath": "añadidos/pasted-image-20241027105317.png",
-      "dependencies": []
-    },
-    "añadidos/pasted-image-20241027105331.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 107116,
-      "exportedPath": "añadidos/pasted-image-20241027105331.png",
-      "dependencies": []
-    },
-    "añadidos/pasted-image-20241027105930.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 87119,
-      "exportedPath": "añadidos/pasted-image-20241027105930.png",
-      "dependencies": []
-    },
-    "añadidos/captura-desde-2024-10-27-11-00-48.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 164003,
-      "exportedPath": "añadidos/captura-desde-2024-10-27-11-00-48.png",
-      "dependencies": []
-    },
-    "añadidos/captura-desde-2024-10-27-11-56-20.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 79557,
-      "exportedPath": "añadidos/captura-desde-2024-10-27-11-56-20.png",
-      "dependencies": []
-    },
-    "añadidos/captura-desde-2024-10-27-21-21-48.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 24042,
-      "exportedPath": "añadidos/captura-desde-2024-10-27-21-21-48.png",
-      "dependencies": []
-    },
-    "añadidos/captura-desde-2024-10-27-21-22-27.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 60860,
-      "exportedPath": "añadidos/captura-desde-2024-10-27-21-22-27.png",
-      "dependencies": []
-    },
-    "añadidos/captura-desde-2024-10-27-21-23-02.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 59831,
-      "exportedPath": "añadidos/captura-desde-2024-10-27-21-23-02.png",
-      "dependencies": []
-    },
-    "añadidos/captura-desde-2024-10-27-21-23-25.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 54604,
-      "exportedPath": "añadidos/captura-desde-2024-10-27-21-23-25.png",
-      "dependencies": []
-    },
-    "añadidos/captura-desde-2024-10-27-21-23-51.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 26571,
-      "exportedPath": "añadidos/captura-desde-2024-10-27-21-23-51.png",
-      "dependencies": []
-    },
-    "añadidos/captura-desde-2024-10-28-02-01-02.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 124631,
-      "exportedPath": "añadidos/captura-desde-2024-10-28-02-01-02.png",
-      "dependencies": []
-    },
-    "añadidos/captura-desde-2024-10-28-02-14-30.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 243430,
-      "exportedPath": "añadidos/captura-desde-2024-10-28-02-14-30.png",
-      "dependencies": []
-    },
-    "añadidos/captura-desde-2024-10-28-02-23-38.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 33088,
-      "exportedPath": "añadidos/captura-desde-2024-10-28-02-23-38.png",
-      "dependencies": []
-    },
-    "añadidos/captura-desde-2024-10-28-03-15-03.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 154720,
-      "exportedPath": "añadidos/captura-desde-2024-10-28-03-15-03.png",
-      "dependencies": []
-    },
-    "añadidos/captura-desde-2024-10-28-03-21-55.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 94952,
-      "exportedPath": "añadidos/captura-desde-2024-10-28-03-21-55.png",
-      "dependencies": []
-    },
-    "añadidos/captura-desde-2024-10-28-03-28-51.png": {
-      "modifiedTime": 1731087827386,
-      "sourceSize": 274437,
-      "exportedPath": "añadidos/captura-desde-2024-10-28-03-28-51.png",
-      "dependencies": []
-    },
-    "añadidos/pasted-image-20241029174230.png": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 115917,
-      "exportedPath": "añadidos/pasted-image-20241029174230.png",
-      "dependencies": []
-    },
-    "añadidos/pasted-image-20241029191812.png": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 402935,
-      "exportedPath": "añadidos/pasted-image-20241029191812.png",
-      "dependencies": []
-    },
-    "añadidos/pasted-image-20241029192401.png": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 39119,
-      "exportedPath": "añadidos/pasted-image-20241029192401.png",
-      "dependencies": []
-    },
-    "añadidos/pasted-image-20241029192458.png": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 18940,
-      "exportedPath": "añadidos/pasted-image-20241029192458.png",
-      "dependencies": []
-    },
-    "añadidos/pasted-image-20241108180646.png": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 59001,
-      "exportedPath": "añadidos/pasted-image-20241108180646.png",
-      "dependencies": []
-    },
-    "añadidos/pasted-image-20241108181814.png": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 16040,
-      "exportedPath": "añadidos/pasted-image-20241108181814.png",
-      "dependencies": []
-    },
-    "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 23377,
-      "exportedPath": "lib/scripts/graph-wasm.wasm",
-      "dependencies": []
-    },
-    "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 66800,
-      "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
-      "dependencies": []
-    },
-    "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 104232,
-      "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
-      "dependencies": []
-    },
-    "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 104332,
-      "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
-      "dependencies": []
-    },
-    "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 98868,
-      "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
-      "dependencies": []
-    },
-    "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 106876,
-      "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
-      "dependencies": []
-    },
-    "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 105804,
-      "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
-      "dependencies": []
-    },
-    "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 106108,
-      "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
-      "dependencies": []
-    },
-    "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 111708,
-      "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
-      "dependencies": []
-    },
-    "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 192740,
-      "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
-      "dependencies": []
-    },
-    "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 161376,
-      "exportedPath": "lib/fonts/454577c22304619db035.ttf",
-      "dependencies": []
-    },
-    "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 191568,
-      "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
-      "dependencies": []
-    },
-    "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 155288,
-      "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
-      "dependencies": []
-    },
-    "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 7876,
-      "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
-      "dependencies": []
-    },
-    "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 317,
-      "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
-      "dependencies": []
-    },
-    "lib/fonts/mathjax_zero.woff": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 1368,
-      "exportedPath": "lib/fonts/mathjax_zero.woff",
-      "dependencies": []
-    },
-    "lib/fonts/mathjax_main-regular.woff": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 34160,
-      "exportedPath": "lib/fonts/mathjax_main-regular.woff",
-      "dependencies": []
-    },
-    "lib/fonts/mathjax_main-bold.woff": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 34464,
-      "exportedPath": "lib/fonts/mathjax_main-bold.woff",
-      "dependencies": []
-    },
-    "lib/fonts/mathjax_math-italic.woff": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 19360,
-      "exportedPath": "lib/fonts/mathjax_math-italic.woff",
-      "dependencies": []
-    },
-    "lib/fonts/mathjax_main-italic.woff": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 20832,
-      "exportedPath": "lib/fonts/mathjax_main-italic.woff",
-      "dependencies": []
-    },
-    "lib/fonts/mathjax_math-bolditalic.woff": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 19776,
-      "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
-      "dependencies": []
-    },
-    "lib/fonts/mathjax_size1-regular.woff": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 5792,
-      "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
-      "dependencies": []
-    },
-    "lib/fonts/mathjax_size2-regular.woff": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 5464,
-      "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
-      "dependencies": []
-    },
-    "lib/fonts/mathjax_size3-regular.woff": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 3244,
-      "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
-      "dependencies": []
-    },
-    "lib/fonts/mathjax_size4-regular.woff": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 5148,
-      "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
-      "dependencies": []
-    },
-    "lib/fonts/mathjax_ams-regular.woff": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 40808,
-      "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
-      "dependencies": []
-    },
-    "lib/fonts/mathjax_calligraphic-regular.woff": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 9600,
-      "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
-      "dependencies": []
-    },
-    "lib/fonts/mathjax_calligraphic-bold.woff": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 9908,
-      "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
-      "dependencies": []
-    },
-    "lib/fonts/mathjax_fraktur-regular.woff": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 21480,
-      "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
-      "dependencies": []
-    },
-    "lib/fonts/mathjax_fraktur-bold.woff": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 22340,
-      "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
-      "dependencies": []
-    },
-    "lib/fonts/mathjax_sansserif-regular.woff": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 12660,
-      "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
-      "dependencies": []
-    },
-    "lib/fonts/mathjax_sansserif-bold.woff": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 15944,
-      "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
-      "dependencies": []
-    },
-    "lib/fonts/mathjax_sansserif-italic.woff": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 14628,
-      "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
-      "dependencies": []
-    },
-    "lib/fonts/mathjax_script-regular.woff": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 11852,
-      "exportedPath": "lib/fonts/mathjax_script-regular.woff",
-      "dependencies": []
-    },
-    "lib/fonts/mathjax_typewriter-regular.woff": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 17604,
-      "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
-      "dependencies": []
-    },
-    "lib/fonts/mathjax_vector-regular.woff": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 1136,
-      "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
-      "dependencies": []
-    },
-    "lib/fonts/mathjax_vector-bold.woff": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 1116,
-      "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
-      "dependencies": []
-    },
-    "lib/html/file-tree.html": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 23798,
-      "exportedPath": "lib/html/file-tree.html",
-      "dependencies": []
-    },
-    "lib/scripts/webpage.js": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 47290,
-      "exportedPath": "lib/scripts/webpage.js",
-      "dependencies": []
-    },
-    "lib/scripts/graph-view.js": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 15519,
-      "exportedPath": "lib/scripts/graph-view.js",
-      "dependencies": []
-    },
-    "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 14021,
-      "exportedPath": "lib/scripts/graph-wasm.js",
-      "dependencies": []
-    },
-    "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 5179,
-      "exportedPath": "lib/scripts/graph-render-worker.js",
-      "dependencies": []
-    },
-    "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 29832,
-      "exportedPath": "lib/scripts/tinycolor.js",
-      "dependencies": []
-    },
-    "lib/scripts/pixi.js": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 449509,
-      "exportedPath": "lib/scripts/pixi.js",
-      "dependencies": []
-    },
-    "lib/scripts/minisearch.js": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 29422,
-      "exportedPath": "lib/scripts/minisearch.js",
-      "dependencies": []
-    },
-    "lib/media/favicon.png": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 1105,
-      "exportedPath": "lib/media/favicon.png",
-      "dependencies": []
-    },
-    "lib/scripts/graph-data.js": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 765,
-      "exportedPath": "lib/scripts/graph-data.js",
-      "dependencies": []
-    },
-    "lib/styles/obsidian.css": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 131107,
-      "exportedPath": "lib/styles/obsidian.css",
-      "dependencies": []
-    },
-    "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 368,
-      "exportedPath": "lib/styles/global-variable-styles.css",
-      "dependencies": []
-    },
-    "lib/styles/main-styles.css": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 23130,
-      "exportedPath": "lib/styles/main-styles.css",
-      "dependencies": []
-    },
-    "Añadidos/Pasted image 20241112113008.png": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 80219,
-      "exportedPath": "añadidos/pasted-image-20241112113008.png",
-      "dependencies": []
-    },
-    "Añadidos/Pasted image 20241112113428.png": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 35838,
-      "exportedPath": "añadidos/pasted-image-20241112113428.png",
-      "dependencies": []
-    },
-    "Añadidos/Pasted image 20241112153318.png": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 23155,
-      "exportedPath": "añadidos/pasted-image-20241112153318.png",
-      "dependencies": []
-    },
-    "Añadidos/Pasted image 20241112153543.png": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 115435,
-      "exportedPath": "añadidos/pasted-image-20241112153543.png",
-      "dependencies": []
-    },
-    "Añadidos/Pasted image 20241112154018.png": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 314791,
-      "exportedPath": "añadidos/pasted-image-20241112154018.png",
-      "dependencies": []
-    },
-    "Añadidos/Pasted image 20241112154950.png": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 38734,
-      "exportedPath": "añadidos/pasted-image-20241112154950.png",
-      "dependencies": []
-    },
-    "Añadidos/Pasted image 20241112164926.png": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 49483,
-      "exportedPath": "añadidos/pasted-image-20241112164926.png",
-      "dependencies": []
-    },
-    "Añadidos/Pasted image 20241112170655.png": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 56246,
-      "exportedPath": "añadidos/pasted-image-20241112170655.png",
-      "dependencies": []
-    },
-    "Añadidos/Pasted image 20241112171010.png": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 50986,
-      "exportedPath": "añadidos/pasted-image-20241112171010.png",
-      "dependencies": []
-    },
-    "Añadidos/Pasted image 20241112171710.png": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 144896,
-      "exportedPath": "añadidos/pasted-image-20241112171710.png",
-      "dependencies": []
-    },
-    "Añadidos/Pasted image 20241112172306.png": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 132465,
-      "exportedPath": "añadidos/pasted-image-20241112172306.png",
-      "dependencies": []
-    },
-    "Añadidos/Pasted image 20241112172318.png": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 22115,
-      "exportedPath": "añadidos/pasted-image-20241112172318.png",
-      "dependencies": []
-    },
-    "Añadidos/Pasted image 20241112172443.png": {
-      "modifiedTime": 1731429374471,
-      "sourceSize": 465449,
-      "exportedPath": "añadidos/pasted-image-20241112172443.png",
-      "dependencies": []
-    },
     "6. Reconstrucción 3D.md": {
-      "modifiedTime": 1731429374471,
+      "modifiedTime": 1731429602151,
       "sourceSize": 8005,
       "exportedPath": "6.-reconstrucción-3d.html",
       "dependencies": [
@@ -1125,82 +567,604 @@
         "añadidos/pasted-image-20241112172443.png"
       ]
     },
+    "index.md": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 217,
+      "exportedPath": "index.html",
+      "dependencies": []
+    },
+    "añadidos/captura-desde-2024-10-26-17-50-36.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 69388,
+      "exportedPath": "añadidos/captura-desde-2024-10-26-17-50-36.png",
+      "dependencies": []
+    },
+    "añadidos/captura-desde-2024-10-26-18-00-57.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 38146,
+      "exportedPath": "añadidos/captura-desde-2024-10-26-18-00-57.png",
+      "dependencies": []
+    },
+    "añadidos/captura-desde-2024-10-26-18-06-08.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 120188,
+      "exportedPath": "añadidos/captura-desde-2024-10-26-18-06-08.png",
+      "dependencies": []
+    },
+    "añadidos/captura-desde-2024-10-26-18-31-23.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 38744,
+      "exportedPath": "añadidos/captura-desde-2024-10-26-18-31-23.png",
+      "dependencies": []
+    },
+    "añadidos/captura-desde-2024-10-26-18-41-55.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 267069,
+      "exportedPath": "añadidos/captura-desde-2024-10-26-18-41-55.png",
+      "dependencies": []
+    },
+    "añadidos/captura-desde-2024-10-26-20-09-08.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 22955,
+      "exportedPath": "añadidos/captura-desde-2024-10-26-20-09-08.png",
+      "dependencies": []
+    },
+    "añadidos/pasted-image-20241026191840.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 371888,
+      "exportedPath": "añadidos/pasted-image-20241026191840.png",
+      "dependencies": []
+    },
+    "añadidos/captura-desde-2024-10-27-09-07-28.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 62518,
+      "exportedPath": "añadidos/captura-desde-2024-10-27-09-07-28.png",
+      "dependencies": []
+    },
+    "añadidos/captura-desde-2024-10-27-09-12-27.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 95769,
+      "exportedPath": "añadidos/captura-desde-2024-10-27-09-12-27.png",
+      "dependencies": []
+    },
+    "añadidos/pasted-image-20241029175542.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 42822,
+      "exportedPath": "añadidos/pasted-image-20241029175542.png",
+      "dependencies": []
+    },
+    "añadidos/captura-desde-2024-10-27-10-05-52.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 77377,
+      "exportedPath": "añadidos/captura-desde-2024-10-27-10-05-52.png",
+      "dependencies": []
+    },
+    "añadidos/captura-desde-2024-10-27-10-06-17.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 76765,
+      "exportedPath": "añadidos/captura-desde-2024-10-27-10-06-17.png",
+      "dependencies": []
+    },
+    "añadidos/captura-desde-2024-10-27-10-06-35.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 256114,
+      "exportedPath": "añadidos/captura-desde-2024-10-27-10-06-35.png",
+      "dependencies": []
+    },
+    "añadidos/captura-desde-2024-10-27-10-49-30.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 85656,
+      "exportedPath": "añadidos/captura-desde-2024-10-27-10-49-30.png",
+      "dependencies": []
+    },
+    "añadidos/pasted-image-20241027105317.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 114202,
+      "exportedPath": "añadidos/pasted-image-20241027105317.png",
+      "dependencies": []
+    },
+    "añadidos/pasted-image-20241027105331.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 107116,
+      "exportedPath": "añadidos/pasted-image-20241027105331.png",
+      "dependencies": []
+    },
+    "añadidos/pasted-image-20241027105930.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 87119,
+      "exportedPath": "añadidos/pasted-image-20241027105930.png",
+      "dependencies": []
+    },
+    "añadidos/captura-desde-2024-10-27-11-00-48.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 164003,
+      "exportedPath": "añadidos/captura-desde-2024-10-27-11-00-48.png",
+      "dependencies": []
+    },
+    "añadidos/captura-desde-2024-10-27-11-56-20.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 79557,
+      "exportedPath": "añadidos/captura-desde-2024-10-27-11-56-20.png",
+      "dependencies": []
+    },
+    "añadidos/captura-desde-2024-10-27-21-21-48.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 24042,
+      "exportedPath": "añadidos/captura-desde-2024-10-27-21-21-48.png",
+      "dependencies": []
+    },
+    "añadidos/captura-desde-2024-10-27-21-22-27.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 60860,
+      "exportedPath": "añadidos/captura-desde-2024-10-27-21-22-27.png",
+      "dependencies": []
+    },
+    "añadidos/captura-desde-2024-10-27-21-23-02.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 59831,
+      "exportedPath": "añadidos/captura-desde-2024-10-27-21-23-02.png",
+      "dependencies": []
+    },
+    "añadidos/captura-desde-2024-10-27-21-23-25.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 54604,
+      "exportedPath": "añadidos/captura-desde-2024-10-27-21-23-25.png",
+      "dependencies": []
+    },
+    "añadidos/captura-desde-2024-10-27-21-23-51.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 26571,
+      "exportedPath": "añadidos/captura-desde-2024-10-27-21-23-51.png",
+      "dependencies": []
+    },
+    "añadidos/captura-desde-2024-10-28-02-01-02.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 124631,
+      "exportedPath": "añadidos/captura-desde-2024-10-28-02-01-02.png",
+      "dependencies": []
+    },
+    "añadidos/captura-desde-2024-10-28-02-14-30.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 243430,
+      "exportedPath": "añadidos/captura-desde-2024-10-28-02-14-30.png",
+      "dependencies": []
+    },
+    "añadidos/captura-desde-2024-10-28-02-23-38.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 33088,
+      "exportedPath": "añadidos/captura-desde-2024-10-28-02-23-38.png",
+      "dependencies": []
+    },
+    "añadidos/captura-desde-2024-10-28-03-15-03.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 154720,
+      "exportedPath": "añadidos/captura-desde-2024-10-28-03-15-03.png",
+      "dependencies": []
+    },
+    "añadidos/captura-desde-2024-10-28-03-21-55.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 94952,
+      "exportedPath": "añadidos/captura-desde-2024-10-28-03-21-55.png",
+      "dependencies": []
+    },
+    "añadidos/captura-desde-2024-10-28-03-28-51.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 274437,
+      "exportedPath": "añadidos/captura-desde-2024-10-28-03-28-51.png",
+      "dependencies": []
+    },
+    "añadidos/pasted-image-20241029174230.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 115917,
+      "exportedPath": "añadidos/pasted-image-20241029174230.png",
+      "dependencies": []
+    },
+    "añadidos/pasted-image-20241029191812.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 402935,
+      "exportedPath": "añadidos/pasted-image-20241029191812.png",
+      "dependencies": []
+    },
+    "añadidos/pasted-image-20241029192401.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 39119,
+      "exportedPath": "añadidos/pasted-image-20241029192401.png",
+      "dependencies": []
+    },
+    "añadidos/pasted-image-20241029192458.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 18940,
+      "exportedPath": "añadidos/pasted-image-20241029192458.png",
+      "dependencies": []
+    },
+    "añadidos/pasted-image-20241108180646.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 59001,
+      "exportedPath": "añadidos/pasted-image-20241108180646.png",
+      "dependencies": []
+    },
+    "añadidos/pasted-image-20241108181814.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 16040,
+      "exportedPath": "añadidos/pasted-image-20241108181814.png",
+      "dependencies": []
+    },
     "añadidos/pasted-image-20241112113008.png": {
-      "modifiedTime": 1731429374471,
+      "modifiedTime": 1731429602151,
       "sourceSize": 80219,
       "exportedPath": "añadidos/pasted-image-20241112113008.png",
       "dependencies": []
     },
     "añadidos/pasted-image-20241112113428.png": {
-      "modifiedTime": 1731429374471,
+      "modifiedTime": 1731429602151,
       "sourceSize": 35838,
       "exportedPath": "añadidos/pasted-image-20241112113428.png",
       "dependencies": []
     },
     "añadidos/pasted-image-20241112154018.png": {
-      "modifiedTime": 1731429374471,
+      "modifiedTime": 1731429602151,
       "sourceSize": 314791,
       "exportedPath": "añadidos/pasted-image-20241112154018.png",
       "dependencies": []
     },
     "añadidos/pasted-image-20241112153543.png": {
-      "modifiedTime": 1731429374471,
+      "modifiedTime": 1731429602151,
       "sourceSize": 115435,
       "exportedPath": "añadidos/pasted-image-20241112153543.png",
       "dependencies": []
     },
     "añadidos/pasted-image-20241112153318.png": {
-      "modifiedTime": 1731429374471,
+      "modifiedTime": 1731429602151,
       "sourceSize": 23155,
       "exportedPath": "añadidos/pasted-image-20241112153318.png",
       "dependencies": []
     },
     "añadidos/pasted-image-20241112154950.png": {
-      "modifiedTime": 1731429374471,
+      "modifiedTime": 1731429602151,
       "sourceSize": 38734,
       "exportedPath": "añadidos/pasted-image-20241112154950.png",
       "dependencies": []
     },
     "añadidos/pasted-image-20241112164926.png": {
-      "modifiedTime": 1731429374471,
+      "modifiedTime": 1731429602151,
       "sourceSize": 49483,
       "exportedPath": "añadidos/pasted-image-20241112164926.png",
       "dependencies": []
     },
     "añadidos/pasted-image-20241112170655.png": {
-      "modifiedTime": 1731429374471,
+      "modifiedTime": 1731429602151,
       "sourceSize": 56246,
       "exportedPath": "añadidos/pasted-image-20241112170655.png",
       "dependencies": []
     },
     "añadidos/pasted-image-20241112171010.png": {
-      "modifiedTime": 1731429374471,
+      "modifiedTime": 1731429602151,
       "sourceSize": 50986,
       "exportedPath": "añadidos/pasted-image-20241112171010.png",
       "dependencies": []
     },
     "añadidos/pasted-image-20241112171710.png": {
-      "modifiedTime": 1731429374471,
+      "modifiedTime": 1731429602151,
       "sourceSize": 144896,
       "exportedPath": "añadidos/pasted-image-20241112171710.png",
       "dependencies": []
     },
     "añadidos/pasted-image-20241112172306.png": {
-      "modifiedTime": 1731429374471,
+      "modifiedTime": 1731429602151,
       "sourceSize": 132465,
       "exportedPath": "añadidos/pasted-image-20241112172306.png",
       "dependencies": []
     },
     "añadidos/pasted-image-20241112172318.png": {
-      "modifiedTime": 1731429374471,
+      "modifiedTime": 1731429602151,
       "sourceSize": 22115,
       "exportedPath": "añadidos/pasted-image-20241112172318.png",
       "dependencies": []
     },
     "añadidos/pasted-image-20241112172443.png": {
-      "modifiedTime": 1731429374471,
+      "modifiedTime": 1731429602151,
       "sourceSize": 465449,
       "exportedPath": "añadidos/pasted-image-20241112172443.png",
+      "dependencies": []
+    },
+    "lib/scripts/graph-wasm.wasm": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 23377,
+      "exportedPath": "lib/scripts/graph-wasm.wasm",
+      "dependencies": []
+    },
+    "lib/fonts/94f2f163d4b698242fef.otf": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 66800,
+      "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
+      "dependencies": []
+    },
+    "lib/fonts/72505e6a122c6acd5471.woff2": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 104232,
+      "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/2d5198822ab091ce4305.woff2": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 104332,
+      "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 98868,
+      "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/cb10ffd7684cd9836a05.woff2": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 106876,
+      "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/b5f0f109bc88052d4000.woff2": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 105804,
+      "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/cbe0ae49c52c920fd563.woff2": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 106108,
+      "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/535a6cf662596b3bd6a6.woff2": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 111708,
+      "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/70cc7ff27245e82ad414.ttf": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 192740,
+      "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/454577c22304619db035.ttf": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 161376,
+      "exportedPath": "lib/fonts/454577c22304619db035.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/52ac8f3034507f1d9e53.ttf": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 191568,
+      "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/05b618077343fbbd92b7.ttf": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 155288,
+      "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 7876,
+      "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+      "dependencies": []
+    },
+    "lib/media/874d8b8e340f75575caa.svg": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 317,
+      "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_zero.woff": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 1368,
+      "exportedPath": "lib/fonts/mathjax_zero.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_main-regular.woff": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 34160,
+      "exportedPath": "lib/fonts/mathjax_main-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_main-bold.woff": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 34464,
+      "exportedPath": "lib/fonts/mathjax_main-bold.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_math-italic.woff": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 19360,
+      "exportedPath": "lib/fonts/mathjax_math-italic.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_main-italic.woff": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 20832,
+      "exportedPath": "lib/fonts/mathjax_main-italic.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_math-bolditalic.woff": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 19776,
+      "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_size1-regular.woff": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 5792,
+      "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_size2-regular.woff": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 5464,
+      "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_size3-regular.woff": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 3244,
+      "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_size4-regular.woff": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 5148,
+      "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_ams-regular.woff": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 40808,
+      "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_calligraphic-regular.woff": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 9600,
+      "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_calligraphic-bold.woff": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 9908,
+      "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_fraktur-regular.woff": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 21480,
+      "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_fraktur-bold.woff": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 22340,
+      "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_sansserif-regular.woff": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 12660,
+      "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_sansserif-bold.woff": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 15944,
+      "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_sansserif-italic.woff": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 14628,
+      "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_script-regular.woff": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 11852,
+      "exportedPath": "lib/fonts/mathjax_script-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_typewriter-regular.woff": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 17604,
+      "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_vector-regular.woff": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 1136,
+      "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_vector-bold.woff": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 1116,
+      "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
+      "dependencies": []
+    },
+    "lib/html/file-tree.html": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 23798,
+      "exportedPath": "lib/html/file-tree.html",
+      "dependencies": []
+    },
+    "lib/scripts/webpage.js": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 47290,
+      "exportedPath": "lib/scripts/webpage.js",
+      "dependencies": []
+    },
+    "lib/scripts/graph-view.js": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 15519,
+      "exportedPath": "lib/scripts/graph-view.js",
+      "dependencies": []
+    },
+    "lib/scripts/graph-wasm.js": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 14021,
+      "exportedPath": "lib/scripts/graph-wasm.js",
+      "dependencies": []
+    },
+    "lib/scripts/graph-render-worker.js": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 5179,
+      "exportedPath": "lib/scripts/graph-render-worker.js",
+      "dependencies": []
+    },
+    "lib/scripts/tinycolor.js": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 29832,
+      "exportedPath": "lib/scripts/tinycolor.js",
+      "dependencies": []
+    },
+    "lib/scripts/pixi.js": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 449509,
+      "exportedPath": "lib/scripts/pixi.js",
+      "dependencies": []
+    },
+    "lib/scripts/minisearch.js": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 29422,
+      "exportedPath": "lib/scripts/minisearch.js",
+      "dependencies": []
+    },
+    "lib/media/favicon.png": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 1105,
+      "exportedPath": "lib/media/favicon.png",
+      "dependencies": []
+    },
+    "lib/scripts/graph-data.js": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 765,
+      "exportedPath": "lib/scripts/graph-data.js",
+      "dependencies": []
+    },
+    "lib/styles/obsidian.css": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 131107,
+      "exportedPath": "lib/styles/obsidian.css",
+      "dependencies": []
+    },
+    "lib/styles/global-variable-styles.css": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 368,
+      "exportedPath": "lib/styles/global-variable-styles.css",
+      "dependencies": []
+    },
+    "lib/styles/main-styles.css": {
+      "modifiedTime": 1731429602151,
+      "sourceSize": 23130,
+      "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     }
   }
