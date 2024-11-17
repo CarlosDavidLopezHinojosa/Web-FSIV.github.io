@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Apuntes de FSIV]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>Apuntes de FSIV</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Tue, 12 Nov 2024 16:40:08 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 12 Nov 2024 16:40:02 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[1. Módulo de Adquisición]]></title><description><![CDATA[ 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Apuntes de FSIV]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>Apuntes de FSIV</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 17 Nov 2024 15:16:43 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 17 Nov 2024 15:16:36 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[1. Módulo de Adquisición]]></title><description><![CDATA[ 
  <br>En esta sección vamos a conocer los distintos elementos hardware que integran el módulo de adquisición SIVA<br><br>La luz es una&nbsp;onda electromagnética capaz de ser percibida por el ojo humano y cuya frecuencia determina su color.<br>Espectro Visible:<br><img alt="Captura desde 2024-10-26 17-50-36.png" src="añadidos/captura-desde-2024-10-26-17-50-36.png"><br><br>Para poder formar una imagen digital capturada del mundo real, vamos a necesitar los siguientes elementos fundamentales:<br>
 <br>Una fuente de Luz: 
 <br>Un objeto que reciba la luz, la refleje : 
@@ -271,7 +271,7 @@ Efecto Visual: La erosión tiende a adelgazar las áreas blancas de la imagen y 
 <br>Definición: La dilatación de una imagen  por un elemento estructurante  consiste en expandir las zonas de intensidad alta (blancas). En una imagen binaria, un píxel se convierte en 1 si algún píxel en la vecindad definida por el elemento estructurante es 1.<br>
 
 <br>Efecto Visual: La dilatación aumenta el tamaño de las áreas blancas y tiende a unir pequeñas regiones que están próximas, rellenando espacios entre objetos.
-<br>En definitiva y lo importante que te tienes que quedar, es que en la dilatación te quedas con el píxel activo más grande y en la erosión con el más pequeño.<br><img alt="Captura desde 2024-10-28 03-28-51.png" src="añadidos/captura-desde-2024-10-28-03-28-51.png"><br>]]></description><link>4.-procesado-basado-en-la-vecindad.html</link><guid isPermaLink="false">4. Procesado Basado en la Vecindad.md</guid><pubDate>Tue, 29 Oct 2024 07:53:51 GMT</pubDate><enclosure url="añadidos/captura-desde-2024-10-27-21-21-48.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;añadidos/captura-desde-2024-10-27-21-21-48.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[5. Modelo Proyectivo]]></title><description><![CDATA[ 
+<br>En definitiva y lo importante que te tienes que quedar, es que en la dilatación te quedas con el píxel activo más grande y en la erosión con el más pequeño.<br><img alt="Captura desde 2024-10-28 03-28-51.png" src="añadidos/captura-desde-2024-10-28-03-28-51.png"><br>]]></description><link>4.-procesado-basado-en-la-vecindad.html</link><guid isPermaLink="false">4. Procesado Basado en la Vecindad.md</guid><pubDate>Sun, 17 Nov 2024 10:33:52 GMT</pubDate><enclosure url="añadidos/captura-desde-2024-10-27-21-21-48.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;añadidos/captura-desde-2024-10-27-21-21-48.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[5. Modelo Proyectivo]]></title><description><![CDATA[ 
  <br>En está sección se nos plantea el siguiente problema que también vimos en el bloque anterior y nos da los fundamentos para después entender como se reconstruye la escena 3D.<br><br>¿Como recupero un punto 3D de una imagen?<br>Como bien ya sabes al hacer una fotografía la componente de la profundidad se pierde, sin embargo, esta es muy importante.<br><img alt="Pasted image 20241029174230.png" src="añadidos/pasted-image-20241029174230.png"><br>Te recomiendo que para repasar esta parte mires esta explicación en <a data-href="2. La Imagen Digital" href="2.-la-imagen-digital.html" class="internal-link" target="_self" rel="noopener nofollow">2. La Imagen Digital</a>.<br>La novedad es que WOW, podemos representar esto como una matriz.<br><br>El vector resultante estará en coordenadas homogéneas, para obtener el vector no homogéneo se divide por la tercer componente.<br><br>Sin embargo, esto solo funciona en una situación ideal y presenta los siguientes problemas:<br>
 <br>
 Distorsión de perspectiva: Aunque la proyección en perspectiva es deseable para algunas aplicaciones, no representa la realidad con suficiente precisión cuando se usan lentes reales.
@@ -494,7 +494,257 @@ Transformación de las Imágenes:
 <br>Primero se procesa la imagen para normalizar el brillo y resaltar textura.
 <br>Se aplica 
 <br>Y por último se filtra para eliminar malas correspondencias.
-<br><img alt="Pasted image 20241112172306.png" src="añadidos/pasted-image-20241112172306.png"><br><img alt="Pasted image 20241112172318.png" src="añadidos/pasted-image-20241112172318.png"><br><br><img alt="Pasted image 20241112172443.png" src="añadidos/pasted-image-20241112172443.png">]]></description><link>6.-reconstrucción-3d.html</link><guid isPermaLink="false">6. Reconstrucción 3D.md</guid><pubDate>Tue, 12 Nov 2024 16:24:44 GMT</pubDate><enclosure url="añadidos/pasted-image-20241112113008.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;añadidos/pasted-image-20241112113008.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[index]]></title><description><![CDATA[ 
+<br><img alt="Pasted image 20241112172306.png" src="añadidos/pasted-image-20241112172306.png"><br><img alt="Pasted image 20241112172318.png" src="añadidos/pasted-image-20241112172318.png"><br><br><img alt="Pasted image 20241112172443.png" src="añadidos/pasted-image-20241112172443.png">]]></description><link>6.-reconstrucción-3d.html</link><guid isPermaLink="false">6. Reconstrucción 3D.md</guid><pubDate>Tue, 12 Nov 2024 16:24:44 GMT</pubDate><enclosure url="añadidos/pasted-image-20241112113008.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;añadidos/pasted-image-20241112113008.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[7. Otros Métodos de Reconstrucción 3D]]></title><description><![CDATA[ 
+ <br>En esta sección abordaremos otros métodos de reconstrucción de la escena 3D.<br><br>La reconstrucción 3D mediante luz estructurada es una técnica ampliamente utilizada para obtener mapas de profundidad precisos y detallados de una escena. <br>A diferencia de la visión estéreo, que utiliza correspondencias entre dos o más imágenes capturadas desde diferentes puntos de vista, esta técnica proyecta patrones conocidos de luz sobre el objeto o la escena y analiza cómo estos patrones se deforman al interactuar con las superficies.<br><img alt="Pasted image 20241117111946.png" src="añadidos/pasted-image-20241117111946.png"><br> ¿Cómo Funciona la Luz Estructurada?<br>La técnica se basa en proyectar un patrón estructurado (como líneas, rejillas o patrones codificados) sobre el objeto y capturarlo con una o más cámaras. La deformación del patrón proyectado permite calcular la geometría 3D de la superficie.<br>Proceso Típico:<br>
+<br>
+Proyección del Patrón:
+
+<br>Un proyector o láser emite un patrón estructurado sobre la escena.
+<br>El patrón puede ser líneas paralelas, patrones de puntos, rejillas o incluso patrones codificados temporalmente.
+
+
+<br>
+Captura de Imágenes:
+
+<br>Una cámara sincronizada con el proyector captura la escena iluminada.
+<br>En configuraciones más avanzadas, varias cámaras pueden capturar el patrón desde diferentes ángulos para aumentar la precisión.
+
+
+<br>
+Cálculo de la Geometría 3D:
+
+<br>Se analizan las deformaciones del patrón proyectado para determinar la profundidad o forma del objeto. Esto generalmente implica triangulación entre el proyector, la cámara y el punto observado.
+
+
+<br>
+Reconstrucción del Modelo 3D:
+
+<br>A partir de los datos de profundidad calculados, se genera un modelo 3D de la escena.
+
+
+<br><br><br><img alt="Pasted image 20241117113101.png" src="añadidos/pasted-image-20241117113101.png"><br>Ventajas:<br>
+<br>
+Alta Precisión:
+
+<br>El código Gray minimiza errores de correspondencia al garantizar que cada píxel de la escena tenga un patrón único.
+
+
+<br>
+Tolerancia a Ruido:
+
+<br>Los patrones codificados son robustos a pequeños errores en la captura debido a iluminación o propiedades superficiales.
+
+
+<br>
+Optimización del Tiempo de Decodificación:
+
+<br>El código Gray es eficiente de calcular, ya que sus transiciones entre valores minimizan los errores por ruido.
+
+
+<br>Inconvenientes:<br>
+<br>
+Sensibilidad a Superficies Reflectivas o Transparentes:
+
+<br>Las superficies brillantes o transparentes pueden causar reflejos o dispersión, dificultando la captura precisa de los patrones proyectados.
+
+
+<br>
+Ambigüedades en Escenas Complejas:
+
+<br>Para escenas con muchas oclusiones o geometrías complejas, es difícil garantizar correspondencias confiables entre cámara y proyector.
+
+
+<br>
+Resolución Limitada:
+
+<br>La precisión depende de la resolución del proyector y la cámara. Para objetos muy pequeños o detalles finos, se requieren sistemas de alta resolución.
+
+
+<br>
+Tiempo de Procesamiento:
+
+<br>Aunque el código Gray minimiza errores, proyectar múltiples patrones y procesar sus capturas lleva tiempo, lo que puede ser una limitación para aplicaciones en tiempo real.
+
+
+<br><br>El método de luz estructurada con desplazamiento de fase es una técnica avanzada utilizada en la reconstrucción 3D, que se basa en proyectar patrones de franjas de luz sobre un objeto para capturar su forma tridimensional con alta precisión. <br>Este enfoque es especialmente útil para superficies con texturas complejas o reflectantes, donde otros métodos pueden fallar.<br><img alt="Pasted image 20241117115309.png" src="añadidos/pasted-image-20241117115309.png"><br>Solamente necesita 3 patrones.<br>Los patrones se calculan de la siguiente manera:<br> - Aquí  es la fase del patrón proyectado sobre la superficie. <br>
+<br>Segundo patrón (desplazamiento de fase negativo):  -  representa el desplazamiento de fase, usualmente igual a  o  radianes. 
+<br>Tercer patrón (desplazamiento de fase positivo): Parámetros en las fórmulas: 
+<br>
+<br>: Intensidad promedio o componente constante, que puede interpretarse como luz ambiente o base del patrón.
+<br>: Amplitud del patrón sinusoidal, que determina el contraste de las franjas. 
+<br>: Fase inicial del patrón, que contiene la información geométrica de la superficie proyectada. 
+<br>: Desplazamiento de fase entre los patrones consecutivos, típicamente  o . 
+<br>Proceso de cálculo de la fase:<br>
+ Para reconstruir la geometría 3D, la fase envolvente  se calcula a partir de los tres patrones proyectados y capturados, usando las siguientes relaciones trigonométricas: <br>Fórmula de : <br>
+<br>Numerador: Representa la diferencia entre las intensidades con fases desplazadas. 
+<br>Denominador: Combinación ponderada de todas las intensidades capturadas.
+<br>Ventajas del método <br>
+<br>Precisión elevada: La utilización de múltiples patrones sinusoidales con desplazamientos de fase reduce el ruido y mejora la exactitud. 
+<br>Fácil implementación: Generar y capturar patrones sinusoidales desplazados es eficiente tanto en hardware como en software. 
+<br>Robustez frente a discontinuidades: El cálculo de la fase ayuda a reconstruir geometrías incluso en superficies complejas. 
+<br> Inconvenientes: <br>
+<br>Requiere sincronización precisa entre el proyector y la cámara para capturar las imágenes. 
+<br>Sensibilidad a movimiento: Este método es sensible al movimiento del objeto o la cámara durante la captura de los patrones. 
+<br>Desenvolvimiento de fase: Si la fase  tiene discontinuidades, se requiere un paso adicional de phase unwrapping para resolverlas.
+<br><br>La Kinect es un dispositivo inicialmente diseñado por Microsoft para videojuegos, pero rápidamente encontró aplicaciones en campos como la reconstrucción 3D debido a su capacidad para capturar imágenes RGB y profundidades de manera simultánea. Este sistema combina tecnologías de luz estructurada e infrarroja, permitiendo obtener información tridimensional del entorno en tiempo real.<br><img alt="Pasted image 20241117155340.png" src="añadidos/pasted-image-20241117155340.png"><br> ¿Cómo funciona la Kinect para reconstrucción 3D?<br>La Kinect emplea un sistema basado en la emisión y detección de luz infrarroja:<br>
+<br>
+Proyección de un patrón infrarrojo:
+
+<br>La Kinect utiliza un emisor de luz infrarroja que proyecta un patrón de puntos (generalmente una cuadrícula aleatoria o patrón pseudoestructurado) sobre la escena.
+<br>Este patrón es diseñado para interactuar con las superficies del entorno y deformarse según la forma de los objetos.
+
+
+<br>
+Captura del patrón deformado:
+
+<br>Una cámara infrarroja captura cómo se deforma el patrón en la escena. 
+<br>La deformación del patrón proyectado depende de la distancia y las características de la superficie del objeto.
+
+
+<br>
+Cálculo de profundidad:
+
+<br>Mediante triangulación, el sistema compara la posición de los puntos en el patrón proyectado con los detectados por la cámara infrarroja.
+<br>Este cálculo proporciona un mapa de profundidad, donde cada píxel representa la distancia de un punto en la escena a la Kinect.
+
+
+<br>
+Imágenes RGB:
+
+<br>Además del mapa de profundidad, la Kinect captura una imagen en color (RGB) que puede ser alineada con el mapa de profundidad.
+
+
+<br>
+Fusión de datos:
+
+<br>Los datos de profundidad y color se combinan para generar una nube de puntos 3D que representa los objetos y el entorno capturado.<br>
+<img alt="Pasted image 20241117155356.png" src="añadidos/pasted-image-20241117155356.png">
+
+
+<br>Ventajas de la Kinect en reconstrucción 3D<br>
+<br>Accesibilidad:
+
+<br>La Kinect es relativamente económica comparada con otros sistemas de escaneo 3D.
+
+
+<br>Tiempo real:
+
+<br>Permite capturar datos 3D en tiempo real, lo cual es útil para aplicaciones interactivas.
+
+
+<br>Facilidad de uso:
+
+<br>Es sencilla de configurar y utilizar, con soporte para múltiples bibliotecas de software como OpenNI, PCL y Kinect SDK.
+
+
+<br>Datos combinados:
+
+<br>Proporciona tanto un mapa de profundidad como imágenes RGB, lo que facilita tareas como segmentación y texturización de los modelos 3D.
+
+
+<br>Limitaciones del sistema Kinect<br>
+<br>Resolución limitada:
+
+<br>La calidad del mapa de profundidad no es comparable a sistemas láser o de fotogrametría de alta precisión.
+
+
+<br>Rango operativo:
+
+<br>Funciona mejor en rangos de distancia entre 0.5 y 4 metros.
+
+
+<br>Problemas con superficies específicas:
+
+<br>Dificultad para capturar superficies reflectantes, transparentes o extremadamente oscuras.
+
+
+<br>Sensibilidad a la iluminación:
+
+<br>Aunque funciona en entornos oscuros gracias al infrarrojo, puede fallar en condiciones de iluminación intensa o cuando otras fuentes infrarrojas interfieren.
+
+
+<br><br>La reconstrucción 3D a partir de siluetas es una técnica utilizada para crear modelos tridimensionales a partir de múltiples imágenes tomadas desde diferentes ángulos, aprovechando las proyecciones del objeto en cada imagen para determinar su forma aproximada. Esta técnica puede implementarse utilizando métodos como Voxel Set y Octree.<br>Concepto básico:<br>
+<br>
+Definición de silueta:
+
+<br>La silueta de un objeto es su proyección binaria sobre una imagen (región ocupada por el objeto frente a un fondo claro o negro).
+
+
+<br>
+Espacio visual:
+
+<br>Cada silueta proyectada define un cono visual en el espacio tridimensional, con el vértice en la posición de la cámara y la base definida por la silueta en el plano de imagen.
+
+
+<br>
+Volumen visual (Visual Hull):
+
+<br>La intersección de los conos visuales generados por todas las siluetas da lugar al Visual Hull, que es una aproximación volumétrica del objeto original.
+
+
+<br>
+Suposiciones:
+
+<br>El objeto es opaco.
+<br>Las cámaras están calibradas (se conocen las posiciones y parámetros de las cámaras).
+
+
+<br><img alt="Pasted image 20241117155846.png" src="añadidos/pasted-image-20241117155846.png"><br><br>Un voxel (volumetric pixel) es una unidad cúbica que representa una porción del espacio 3D, similar a cómo un píxel representa un punto en 2D.<br><img alt="Pasted image 20241117160923.png" src="añadidos/pasted-image-20241117160923.png"><br>Método de reconstrucción:<br>
+<br>
+Definición del espacio 3D:
+
+<br>El espacio tridimensional se divide en una cuadrícula uniforme de voxeles.
+
+
+<br>
+Proyección de los voxeles:
+
+<br>Cada voxel se proyecta en todas las imágenes disponibles.
+<br>Si el voxel cae dentro de la silueta en todas las imágenes, se clasifica como interior; de lo contrario, se clasifica como exterior.
+
+
+<br>
+Resultado:
+
+<br>La reconstrucción final es un volumen discreto compuesto por los voxeles clasificados como interiores.
+
+
+<br><img alt="Pasted image 20241117161118.png" src="añadidos/pasted-image-20241117161118.png"><br>Ventajas:<br>
+<br>Fácil de implementar.
+<br>Buena aproximación para objetos con formas regulares.
+<br>Inconvenientes:<br>
+<br>Consumo elevado de memoria para representaciones de alta resolución.
+<br>La precisión depende del tamaño de los voxeles: más pequeños significan mayor precisión pero mayor costo computacional.
+<br><br>
+<br>Un Octree es una estructura jerárquica de datos que subdivide el espacio 3D en ocho partes (octantes) de manera recursiva.
+<br>Cada nodo del Octree representa un volumen cúbico que puede subdividirse en octantes más pequeños.
+<br><img alt="Pasted image 20241117161056.png" src="añadidos/pasted-image-20241117161056.png"><br>Método de reconstrucción:<br>
+<br>
+Inicialización del espacio:
+
+<br>Todo el espacio 3D se representa como un único nodo cúbico.
+
+
+<br>
+Proyección y subdivisión:
+
+<br>Si el nodo cúbico intersecta con el Visual Hull, se subdivide en ocho subceldas (octantes).
+<br>Este proceso continúa hasta alcanzar una resolución deseada o hasta que una celda se clasifique completamente como interior o exterior.
+
+
+<br>
+Resultado:
+
+<br>El modelo final es una aproximación jerárquica del objeto, donde las regiones interiores y exteriores están representadas con diferentes niveles de detalle.
+
+
+<br>Ventajas:<br>
+<br>Eficiente en memoria: solo subdivide las regiones necesarias.
+<br>Permite un balance entre precisión y rendimiento.
+<br>Limitaciones:<br>
+<br>Más complejo de implementar que el método de Voxel Set.
+<br>Puede perder precisión en las regiones con bordes complejos si no se subdivide adecuadamente.
+<br>]]></description><link>7.-otros-métodos-de-reconstrucción-3d.html</link><guid isPermaLink="false">7. Otros Métodos de Reconstrucción 3D.md</guid><pubDate>Sun, 17 Nov 2024 15:16:06 GMT</pubDate><enclosure url="añadidos/pasted-image-20241117111946.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;añadidos/pasted-image-20241117111946.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[index]]></title><description><![CDATA[ 
  <br><br><a data-href="1. Módulo de Adquisición" href="1.-módulo-de-adquisición.html" class="internal-link" target="_self" rel="noopener nofollow">1. Módulo de Adquisición</a><br>
 <a data-href="2. La Imagen Digital" href="2.-la-imagen-digital.html" class="internal-link" target="_self" rel="noopener nofollow">2. La Imagen Digital</a><br>
 <a data-href="3. Procesado de la Imagen Digital" href="3.-procesado-de-la-imagen-digital.html" class="internal-link" target="_self" rel="noopener nofollow">3. Procesado de la Imagen Digital</a><br>
